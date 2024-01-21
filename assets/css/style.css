@@ -15,18 +15,18 @@
     Light: #9CB0A4
 */
 
-/*Header*/
-header {
-    background-color: #394B41;
-}
-
-
+/*General*/
 .white-text {
     color: #FFF;
 }
 
 .dark-text {
     color: #000;
+}
+
+/*Header*/
+header {
+    background-color: #394B41;
 }
 
 .header-icon {
@@ -36,6 +36,22 @@ header {
 /*Main*/
 main {
     background-color: #9CB0A4;
+}
+
+#button-play {
+    background: green;
+    border: solid 0.5rem #000;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+#button-info {
+    background: red;
+    border: solid 0.5rem #000;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
 }
 
 /*Footer*/
