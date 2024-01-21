@@ -1,0 +1,24 @@
+/*
+    Color Palette
+
+    Standard:
+    White: #FFF
+    Black: #000
+
+    Threedom:
+    Green: #35654D
+    Blue: #395C94
+    Red: #924534
+*/
+
+#page-title{
+    color: #FFF;
+}
+
+.header-icon {
+    width: 1rem;
+}
+
+#icon-diamond {
+    color: red;
+}
