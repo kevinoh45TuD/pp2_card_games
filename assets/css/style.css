@@ -21,16 +21,12 @@ header {
 }
 
 
-#page- title {
+#page-title {
     color: #FFF;
 }
 
 .header-icon {
     width: 1rem;
-}
-
-#icon-diamond {
-    color: red;
 }
 
 /*Main*/
