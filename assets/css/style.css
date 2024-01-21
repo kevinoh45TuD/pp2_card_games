@@ -9,9 +9,19 @@
     Green: #35654D
     Blue: #395C94
     Red: #924534
+
+    Grey:
+    Dark: #394B41
+    Light: #9CB0A4
 */
 
-#page-title{
+/*Header*/
+header {
+    background-color: #394B41;
+}
+
+
+#page- title {
     color: #FFF;
 }
 
@@ -21,4 +31,14 @@
 
 #icon-diamond {
     color: red;
+}
+
+/*Main*/
+main {
+    background-color: #9CB0A4;
+}
+
+/*Footer*/
+footer {
+    background-color: #394B41;
 }
