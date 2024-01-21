@@ -21,8 +21,12 @@ header {
 }
 
 
-#page-title {
+.white-text {
     color: #FFF;
+}
+
+.dark-text {
+    color: #000;
 }
 
 .header-icon {
