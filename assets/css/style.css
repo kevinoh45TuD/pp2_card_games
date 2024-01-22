@@ -23,12 +23,18 @@
 }
 
 /*General*/
-.white-text {
-    color: #FFF;
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    /*Generic Styles*/
+    color: #000;
+
 }
 
-.dark-text {
-    color: #000;
+.white-text {
+    color: #FFF;
 }
 
 /*Header*/
@@ -43,6 +49,8 @@ header {
 /*Main*/
 main {
     background-color: #9CB0A4;
+
+    flex: 1 0 auto;
 }
 
 #button-play {
