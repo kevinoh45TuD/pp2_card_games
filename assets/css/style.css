@@ -70,8 +70,17 @@ header {
 /*Main*/
 main {
     background-color: #9CB0A4;
-
     flex: 1 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.home-text {
+    text-align: center;
 }
 
 #button-play {
@@ -80,6 +89,12 @@ main {
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
+    margin: auto;
+}
+
+#play-text {
+    display: flex;
+    justify-content: center;
 }
 
 #button-info {
@@ -88,6 +103,12 @@ main {
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
+    margin: auto;
+}
+
+#info-text {
+    display: flex;
+    justify-content: center;
 }
 
 /*Footer*/
