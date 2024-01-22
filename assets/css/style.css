@@ -15,6 +15,13 @@
     Light: #9CB0A4
 */
 
+/*Asterisk to override defaults*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 /*General*/
 .white-text {
     color: #FFF;
