@@ -73,3 +73,18 @@ main {
 footer {
     background-color: #394B41;
 }
+
+#social-networks {
+    text-align: center;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-evenly;
+
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 2rem;
+    padding: 5%;
+    color: #000;
+}
