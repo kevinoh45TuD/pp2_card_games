@@ -10,22 +10,30 @@ function spawnCards() {
 
     let board = document.getElementById("main-game");
 
-    for (let i = 0; i <= 3; i++) {
-        console.log(i);
+    let count = 0;
 
-        let card = document.createElement("img");
-        card.src = "assets/images/spade-icon.png";
-        card.id = "card" + i;
+    for (let h = 0; h <= 3; h++) {
+        for (let i = 0; i <= 3; i++) {
+            console.log(i);
 
-        card.style.position = "fixed";
-        card.style.width = "4rem";
+            let card = document.createElement("img");
+            card.src = "assets/images/spade-icon.png";
 
-        let calY = 15 + (8 * i);
-        let calX = 2.5 + (6 * i);
+            card.id = "card" + count;
 
-        card.style.top = calY + "rem";
-        card.style.left = calX + "rem";
+            card.style.position = "fixed";
+            card.style.width = "4rem";
 
-        board.appendChild(card);
+            let calY = 15 + (8 * h);
+            let calX = 2.5 + (6 * i);
+
+            card.style.top = calY + "rem";
+            card.style.left = calX + "rem";
+
+            board.appendChild(card);
+
+            count++;
+        }
     }
+
 }
