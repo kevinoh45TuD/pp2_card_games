@@ -6,6 +6,12 @@ function clickInfo() {
     alert("Info");
 }
 
+function clickCard() {
+    console.log("Card: " + this.id);
+
+    this.style.display = "none";
+}
+
 let fullDeck = [];
 
 function generateList() {
@@ -78,6 +84,7 @@ function spawnCards() {
             card.src = "assets/images/spade-icon.png";
 
             card.id = randomPick(fullDeck);
+            card.addEventListener("click", clickCard);
 
             card.style.position = "fixed";
             card.style.width = "4rem";
