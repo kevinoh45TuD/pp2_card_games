@@ -25,6 +25,7 @@
       type="image/x-icon"
     />
   </head>
+
   <body>
     <!--Header-->
     <header>
@@ -68,36 +69,12 @@
 
     <!--Main-->
     <main>
-      <div class="container-home">
-        <div class="home-text">
-          <p class="dark-text">
-            Welcome to Card Games!
-            <br /><br />
-            Here you will be able to play match, the main objective is to flip
-            cards till you find a pair.
-            <br />
-            You can either startplaying or get more information about the game
-            below.
-            <br />
-          </p>
-          <a href="game.html">Game</a>
-        </div>
-        <div class="home-buttons">
-          <button id="button-play" class="hbutton" onclick="clickPlay()">
-            <i class="fa-solid fa-play"></i>
-          </button>
-
-          <div id="play-text" class="dark-text">
-            <h3>Play</h3>
-          </div>
-
-          <button id="button-info" class="hbutton" onclick="clickInfo()">
-            <i class="fa-solid fa-info"></i>
-          </button>
-
-          <div id="info-text" class="dark-text">
-            <h3>Info</h3>
-          </div>
+      <div class="container-game">
+        <div class="top-game">Restart Score: Quit</div>
+        <div class="main-game">Card</div>
+        <div class="bottom-game">
+          <div class="bottom-one">Highscore</div>
+          <div class="bottom-two">Info</div>
         </div>
       </div>
     </main>
