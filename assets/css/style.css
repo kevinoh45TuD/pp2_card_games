@@ -119,6 +119,32 @@ main {
     justify-content: center;
 }
 
+/*Game*/
+.container-game {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.top-game {
+    background-color: #924534;
+
+    height: 5rem;
+}
+
+.main-game {
+    background-color: #395C94;
+
+    height: 36rem;
+}
+
+.bottom-game {
+    background-color: #924534;
+
+    height: 5rem;
+}
+
 /*Footer*/
 footer {
     background-color: #394B41;
