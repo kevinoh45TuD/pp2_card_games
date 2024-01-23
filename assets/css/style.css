@@ -133,7 +133,7 @@ main {
     height: 5rem;
 }
 
-.main-game {
+#main-game {
     background-color: #395C94;
 
     height: 36rem;
