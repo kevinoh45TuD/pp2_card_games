@@ -50,6 +50,20 @@ function generateList() {
     console.log(fullDeck);
 }
 
+function randomPick(whichArray) {
+    let pick = Math.floor(Math.random() * (whichArray.length + 1));
+
+    let pickCard = whichArray[pick];
+
+    let x = whichArray.splice(pick - 1, 1);
+
+    console.log("x: " + x);
+    console.log("which:" + whichArray);
+    console.log("pick: " + pick);
+
+    return x;
+}
+
 function spawnCards() {
 
     generateList();
@@ -60,12 +74,10 @@ function spawnCards() {
 
     for (let h = 0; h <= 3; h++) {
         for (let i = 0; i <= 3; i++) {
-            console.log(i);
-
             let card = document.createElement("img");
             card.src = "assets/images/spade-icon.png";
 
-            card.id = "card" + count;
+            card.id = randomPick(fullDeck);
 
             card.style.position = "fixed";
             card.style.width = "4rem";
