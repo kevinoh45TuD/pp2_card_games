@@ -6,10 +6,66 @@ function clickInfo() {
     alert("Info");
 }
 
+function flipCard(cardValue, whichCard) {
+    switch (cardValue) {
+        case "2r-heart":
+            whichCard.src = "assets/images/card-art/heart2.png";
+            break;
+        case "3r-heart":
+            whichCard.src = "assets/images/card-art/heart3.png";
+            break;
+        case "4r-heart":
+            whichCard.src = "assets/images/card-art/heart4.png";
+            break;
+        case "5r-heart":
+            whichCard.src = "assets/images/card-art/heart5.png";
+            break;
+        case "2r-diamond":
+            whichCard.src = "assets/images/card-art/diamond2.png";
+            break;
+        case "3r-diamond":
+            whichCard.src = "assets/images/card-art/diamond3.png";
+            break;
+        case "4r-diamond":
+            whichCard.src = "assets/images/card-art/diamond4.png";
+            break;
+        case "5r-diamond":
+            whichCard.src = "assets/images/card-art/diamond5.png";
+            break;
+        case "2b-spade":
+            whichCard.src = "assets/images/card-art/spade2.png";
+            break;
+        case "3b-spade":
+            whichCard.src = "assets/images/card-art/spade3.png";
+            break;
+        case "4b-spade":
+            whichCard.src = "assets/images/card-art/spade4.png";
+            break;
+        case "5b-spade":
+            whichCard.src = "assets/images/card-art/spade5.png";
+            break;
+        case "2b-club":
+            whichCard.src = "assets/images/card-art/club2.png";
+            break;
+        case "3b-club":
+            whichCard.src = "assets/images/card-art/club3.png";
+            break;
+        case "4b-club":
+            whichCard.src = "assets/images/card-art/club4.png";
+            break;
+        case "5b-club":
+            whichCard.src = "assets/images/card-art/club5.png";
+            break;
+        default:
+            whichCard.src = "assets/images/card-art/heart2.png";
+            break;
+    }
+}
+
 function clickCard() {
     console.log("Card: " + this.id);
 
-    this.style.display = "none";
+    flipCard(this.id, this);
 }
 
 let fullDeck = [];
