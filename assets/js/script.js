@@ -19,31 +19,31 @@ function generateList() {
     fullDeck = [];
 
     const hearts = [
-        "2-heart",
-        "3-heart",
-        "4-heart",
-        "5-heart"
+        "2r-heart",
+        "3r-heart",
+        "4r-heart",
+        "5r-heart"
     ];
 
     const diamonds = [
-        "2-diamond",
-        "3-diamond",
-        "4-diamond",
-        "5-diamond"
+        "2r-diamond",
+        "3r-diamond",
+        "4r-diamond",
+        "5r-diamond"
     ];
 
     const spades = [
-        "2-spade",
-        "3-spade",
-        "4-spade",
-        "5-spade"
+        "2b-spade",
+        "3b-spade",
+        "4b-spade",
+        "5b-spade"
     ];
 
     const clubs = [
-        "2-club",
-        "3-club",
-        "4-club",
-        "5-club"
+        "2b-club",
+        "3b-club",
+        "4b-club",
+        "5b-club"
     ];
 
     for (let i = 0; i <= 3; i++) {
@@ -81,7 +81,7 @@ function spawnCards() {
     for (let h = 0; h <= 3; h++) {
         for (let i = 0; i <= 3; i++) {
             let card = document.createElement("img");
-            card.src = "assets/images/spade-icon.png";
+            card.src = "assets/images/card-art/card-back.png";
 
             card.id = randomPick(fullDeck);
             card.addEventListener("click", clickCard);
