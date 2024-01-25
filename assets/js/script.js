@@ -102,14 +102,16 @@ function flipCard(cardValue, whichCard) {
 
 function clickCard() {
 
-    if (canFlip <= 1) {
+    if (canFlip <= 1 && this.id !== flipOne) {
         canFlip++;
 
         console.log("Card: " + this.id);
 
         flipCard(this.id, this);
 
-        window.setTimeout(compareCards(this.id), 15000);
+        setTimeout(function () {
+            compareCards(this.id);
+        }, 3000);
     }
 
 }
