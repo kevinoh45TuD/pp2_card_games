@@ -1,9 +1,47 @@
+
+let flipOne = null;
+let flipTwo = null;
+
+let canFlip = 0;
+
 function clickPlay() {
     alert("Play");
 }
 
 function clickInfo() {
     alert("Info");
+}
+
+function compareCards(comparisonCard) {
+    if (flipOne === null) {
+        flipOne = document.getElementById(comparisonCard);
+
+    }
+    else {
+        flipTwo = document.getElementById(comparisonCard);
+
+        if (flipOne.id[0] === flipTwo.id[0] && flipOne.id[1] === flipTwo.id[1]) {
+            console.log("Match!");
+
+            flipOne.remove();
+            flipTwo.remove();
+
+            flipOne = null;
+            flipTwo = null;
+        }
+        else {
+
+            console.log("No Match!");
+
+            flipOne.src = "assets/images/card-art/card-back.png";
+            flipTwo.src = "assets/images/card-art/card-back.png";
+
+            flipOne = null;
+            flipTwo = null;
+        }
+
+        canFlip = 0;
+    }
 }
 
 function flipCard(cardValue, whichCard) {
@@ -63,9 +101,17 @@ function flipCard(cardValue, whichCard) {
 }
 
 function clickCard() {
-    console.log("Card: " + this.id);
 
-    flipCard(this.id, this);
+    if (canFlip <= 1) {
+        canFlip++;
+
+        console.log("Card: " + this.id);
+
+        flipCard(this.id, this);
+
+        window.setTimeout(compareCards(this.id), 15000);
+    }
+
 }
 
 let fullDeck = [];
@@ -118,10 +164,6 @@ function randomPick(whichArray) {
     let pickCard = whichArray[pick];
 
     let x = whichArray.splice(pick - 1, 1);
-
-    console.log("x: " + x);
-    console.log("which:" + whichArray);
-    console.log("pick: " + pick);
 
     return x;
 }
