@@ -15,11 +15,11 @@ function clickInfo() {
 function compareCards(comparisonCard) {
     if (flipOne === null) {
         flipOne = document.getElementById(comparisonCard);
-
+        console.log(flipOne, flipTwo);
     }
     else {
         flipTwo = document.getElementById(comparisonCard);
-
+        console.log(flipOne, flipTwo);
         if (flipOne.id[0] === flipTwo.id[0] && flipOne.id[1] === flipTwo.id[1]) {
             console.log("Match!");
 
@@ -107,11 +107,17 @@ function clickCard() {
 
         console.log("Card: " + this.id);
 
+        let timeout = this.id;
+
         flipCard(this.id, this);
 
         setTimeout(function () {
-            compareCards(this.id);
+            console.log("start timer");
+            compareCards(timeout);
+            console.log(timeout);
         }, 3000);
+
+        console.log("finish timer");
     }
 
 }
@@ -200,5 +206,7 @@ function spawnCards() {
             count++;
         }
     }
+
+    console.log(flipOne, flipTwo);
 
 }
