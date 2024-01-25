@@ -142,11 +142,11 @@ function spawnCards() {
             card.id = randomPick(fullDeck);
             card.addEventListener("click", clickCard);
 
-            card.style.position = "fixed";
+            card.style.position = "absolute";
             card.style.width = "4rem";
 
-            let calY = 15 + (8 * h);
-            let calX = 2.5 + (6 * i);
+            let calY = 13 + (7 * h);
+            let calX = 1.5 + (6 * i);
 
             card.style.top = calY + "rem";
             card.style.left = calX + "rem";
