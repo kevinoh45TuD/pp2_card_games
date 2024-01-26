@@ -1,14 +1,49 @@
 
 const infoModal = document.getElementById("info-modal");
+const homeContainer = document.getElementById("home");
 
 let flipOne = null;
 let flipTwo = null;
 
 let canFlip = 0;
 
-function clickPlay() {
-    alert("Play");
+function setHome() {
+    home.innerHTML =
+        `
+    <div class="home-text">
+          <p class="dark-text">
+            Welcome to Card Games!
+            <br /><br />
+            Here you will be able to play match, the main objective is to flip
+            cards till you find a pair.
+            <br />
+            You can either startplaying or get more information about the game
+            below.
+            <br />
+          </p>
+          <a href="game.html">Game</a>
+        </div>
+        <div class="home-buttons">
+          <button id="button-play" class="hbutton" onclick="clickPlay()">
+            <i class="fa-solid fa-play"></i>
+          </button>
+
+          <div id="play-text" class="dark-text">
+            <h3>Play</h3>
+          </div>
+
+          <button id="button-info" class="hbutton" onclick="clickInfo()">
+            <i class="fa-solid fa-info"></i>
+          </button>
+
+          <div id="info-text" class="dark-text">
+            <h3>Info</h3>
+          </div>
+        </div>
+    `;
 }
+
+
 
 function clickInfo() {
     infoModal.style.display = "block";
@@ -249,4 +284,28 @@ function spawnCards() {
 
     console.log(flipOne, flipTwo);
 
+}
+
+function setGame() {
+    home.innerHTML =
+        `
+    <div class="container-game">
+        <div class="top-game">Restart Score: Quit</div>
+        <div id="main-game"></div>
+        <div class="bottom-game">
+          <div class="bottom-one">Highscore</div>
+          <div class="bottom-two">
+            <button id="button-game" class="hbutton" onclick="setHome()">
+              <i class="fa-solid fa-play"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    `;
+
+    spawnCards();
+}
+
+function clickPlay() {
+    setGame();
 }
