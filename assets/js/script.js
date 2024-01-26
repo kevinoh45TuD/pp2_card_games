@@ -1,4 +1,6 @@
 
+const infoModal = document.getElementById("info-modal");
+
 let flipOne = null;
 let flipTwo = null;
 
@@ -9,8 +11,18 @@ function clickPlay() {
 }
 
 function clickInfo() {
-    alert("Info");
+    infoModal.style.display = "block";
 }
+
+function closeInfo() {
+    infoModal.style.display = "none";
+};
+
+window.onclick = function (clickEvent) {
+    if (clickEvent.target == infoModal) {
+        infoModal.style.display = "none";
+    }
+};
 
 function compareCards(comparisonCard) {
     if (flipOne === null) {
