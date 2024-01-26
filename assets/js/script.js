@@ -154,8 +154,6 @@ function clickCard() {
 
     let cardId = this.id;
 
-    this.removeEventListener("click", clickCard);
-
     if (canFlip <= 1) {
 
 
@@ -164,7 +162,7 @@ function clickCard() {
 
                 canFlip++;
 
-
+                this.removeEventListener("click", clickCard);
 
                 flipCard(cardId, this);
 
@@ -180,7 +178,7 @@ function clickCard() {
         else {
             canFlip++;
 
-
+            this.removeEventListener("click", clickCard);
 
             flipCard(cardId, this);
 
