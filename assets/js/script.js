@@ -125,7 +125,7 @@ function clickCard() {
 
                     compareCards(cardId);
 
-                }, 3000);
+                }, 1500);
 
             }
 
@@ -141,7 +141,7 @@ function clickCard() {
 
                 compareCards(cardId);
 
-            }, 3000);
+            }, 1500);
 
 
         }
