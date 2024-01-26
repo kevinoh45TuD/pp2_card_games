@@ -36,6 +36,9 @@ function compareCards(comparisonCard) {
             flipOne.src = "assets/images/card-art/card-back.png";
             flipTwo.src = "assets/images/card-art/card-back.png";
 
+            flipOne.addEventListener("click", clickCard);
+            flipTwo.addEventListener("click", clickCard);
+
             flipOne = null;
             flipTwo = null;
         }
@@ -104,26 +107,24 @@ function clickCard() {
 
     let cardId = this.id;
 
-    if (flipOne === null) {
-
-    }
+    this.removeEventListener("click", clickCard);
 
     if (canFlip <= 1) {
-        console.log("cardID: " + cardId);
-        
+
 
         if (flipOne !== null) {
             if (cardId !== flipOne.id) {
+
                 canFlip++;
 
-                console.log("Card: " + cardId);
+
 
                 flipCard(cardId, this);
 
                 setTimeout(function () {
-                    console.log("start timer");
+
                     compareCards(cardId);
-                    console.log(cardId);
+
                 }, 3000);
 
             }
@@ -132,14 +133,14 @@ function clickCard() {
         else {
             canFlip++;
 
-            console.log("Card: " + cardId);
+
 
             flipCard(cardId, this);
 
             setTimeout(function () {
-                console.log("start timer");
+
                 compareCards(cardId);
-                console.log(cardId);
+
             }, 3000);
 
 
