@@ -102,22 +102,49 @@ function flipCard(cardValue, whichCard) {
 
 function clickCard() {
 
-    if (canFlip <= 1 && this.id !== flipOne) {
-        canFlip++;
+    let cardId = this.id;
 
-        console.log("Card: " + this.id);
+    if (flipOne === null) {
 
-        let timeout = this.id;
+    }
 
-        flipCard(this.id, this);
+    if (canFlip <= 1) {
+        console.log("cardID: " + cardId);
+        
 
-        setTimeout(function () {
-            console.log("start timer");
-            compareCards(timeout);
-            console.log(timeout);
-        }, 3000);
+        if (flipOne !== null) {
+            if (cardId !== flipOne.id) {
+                canFlip++;
 
-        console.log("finish timer");
+                console.log("Card: " + cardId);
+
+                flipCard(cardId, this);
+
+                setTimeout(function () {
+                    console.log("start timer");
+                    compareCards(cardId);
+                    console.log(cardId);
+                }, 3000);
+
+            }
+
+        }
+        else {
+            canFlip++;
+
+            console.log("Card: " + cardId);
+
+            flipCard(cardId, this);
+
+            setTimeout(function () {
+                console.log("start timer");
+                compareCards(cardId);
+                console.log(cardId);
+            }, 3000);
+
+
+        }
+
     }
 
 }
