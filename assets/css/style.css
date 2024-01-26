@@ -138,21 +138,31 @@ main {
 .modal-content {
     background-color: #395C94;
 
-    margin: 50% auto;
+    margin: 24% auto;
 
     padding: 2rem;
-    border: 1rem solid #000;
+    border: 0.5rem solid #000;
 
     width: 80%;
 }
 
 .modal-button {
-    color: #924534;
+    color: #000;
+    background-color: #FFF;
 
+    position: relative;
     float: right;
+    top: -3rem;
+    right: -3rem;
 
     font-size: 2rem;
     font-weight: bold;
+
+    width: 3rem;
+    height: 3rem;
+
+    border: solid #000;
+    border-radius: 50%;
 }
 
 /*Game*/
