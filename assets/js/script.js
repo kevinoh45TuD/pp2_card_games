@@ -8,6 +8,8 @@ let flipTwo = null;
 
 let canFlip = 0;
 
+let playerAttempts = 0;
+
 function setHome() {
     home.innerHTML =
         `
@@ -86,6 +88,10 @@ function compareCards(comparisonCard) {
 
             flipOne = null;
             flipTwo = null;
+
+            playerAttempts++;
+            let changeScore = document.getElementById("game-score");
+            changeScore.innerHTML = "Score: " + playerAttempts;
         }
         else {
 
@@ -99,6 +105,10 @@ function compareCards(comparisonCard) {
 
             flipOne = null;
             flipTwo = null;
+
+            playerAttempts++;
+            let changeScore = document.getElementById("game-score");
+            changeScore.innerHTML = "Score: " + playerAttempts;
         }
 
         canFlip = 0;
@@ -262,6 +272,8 @@ function randomPick(whichArray) {
 
 function spawnCards() {
 
+    playerAttempts = 0;
+
     generateList();
 
     let board = document.getElementById("main-game");
@@ -310,7 +322,7 @@ function setGame() {
             </button>
           </div>
 
-          <div id="game-score">Score:</div>
+          <div id="game-score">Score: 0</div>
 
           <div id="top-right">
             <button id="quit-game" class="game-button" onclick="openQuit()">
