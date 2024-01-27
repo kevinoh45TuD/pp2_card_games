@@ -169,6 +169,34 @@ main {
     border-radius: 50%;
 }
 
+/*Quit Modal*/
+.yes-no{
+    display: flex;
+
+    justify-content: space-evenly;
+}
+
+.choice-button{
+    background-color: darkorchid;
+
+    width: 4rem;
+    height: 4rem;
+
+    border-radius:50%;
+
+    font-size: 1.5rem;
+}
+
+#p-quit{
+    display: flex;
+
+    justify-content: center;
+
+    padding-bottom: 2rem;
+
+    font-size: 2rem;
+}
+
 /*Game*/
 .game-button {
     background-color: #35654D;
