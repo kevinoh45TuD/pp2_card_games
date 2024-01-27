@@ -119,13 +119,10 @@
       </div>
       <div id="quit-modal" class="modal">
         <div class="modal-content">
-          <button id="close-modal" class="modal-button" onclick="closeInfo()">
-            <i class="fa-solid fa-x"></i>
-          </button>
           <p>Quit Game?</p>
           <div class="yes-no">
-            <button class="choice-button">Yes</button>
-            <button class="choice-button">No</button>
+            <button class="choice-button" onclick="confirmClose()">Yes</button>
+            <button class="choice-button" onclick="denyClose()">No</button>
           </div>
         </div>
       </div>

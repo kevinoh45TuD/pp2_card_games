@@ -1,6 +1,7 @@
 
 const infoModal = document.getElementById("info-modal");
 const homeContainer = document.getElementById("home");
+const quitModal = document.getElementById("quit-modal");
 
 let flipOne = null;
 let flipTwo = null;
@@ -305,31 +306,34 @@ window.onclick = function (clickEvent) {
     if (clickEvent.target == infoModal) {
         infoModal.style.display = "none";
     }
+    else if (clickEvent.target == quitModal) {
+        quitModal.style.display = "none";
+    }
 };
 
 //Close Game
-function openClose(){
-
+function openClose() {
+    quitModal.style.display = "block";
 }
 
-function confirmClose(){
-
+function confirmClose() {
+    setHome();
 }
 
-function denyClose(){
-
+function denyClose() {
+    quitModal.style.display = "none";
 }
 
 //Restart Game
-function openRestart(){
+function openRestart() {
 
 }
 
-function confirmRestart(){
+function confirmRestart() {
 
 }
 
-function denyRestart(){
+function denyRestart() {
 
 }
 
