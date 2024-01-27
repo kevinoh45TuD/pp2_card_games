@@ -312,15 +312,15 @@ window.onclick = function (clickEvent) {
 };
 
 //Close Game
-function openClose() {
+function openQuit() {
     quitModal.style.display = "block";
 }
 
-function confirmClose() {
+function confirmQuit() {
     setHome();
 }
 
-function denyClose() {
+function denyQuit() {
     quitModal.style.display = "none";
 }
 
