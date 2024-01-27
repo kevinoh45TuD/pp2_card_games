@@ -170,6 +170,19 @@ main {
 }
 
 /*Game*/
+.game-button {
+    background-color: #35654D;
+    color: #000;
+
+    border: #000 solid 0.5rem;
+    border-radius: 50%;
+
+    width: 5rem;
+    height: 3rem;
+
+    position: relative;
+}
+
 .container-game {
     display: flex;
     flex-direction: column;
@@ -190,9 +203,31 @@ main {
 }
 
 .bottom-game {
-    background-color: #924534;
-
     height: 5rem;
+    display: flex;
+}
+
+.bottom-one {
+    background-color: #924534;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.bottom-two {
+    background-color: #924534;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#info-game {
+    left: 2rem;
+}
+
+#highscore-game {
+    right: 2rem;
 }
 
 /*Footer*/
