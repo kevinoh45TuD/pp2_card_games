@@ -71,13 +71,23 @@
     <main>
       <div class="container-game">
         <div class="top-game">
-          <button id="restart-game" class="game-button" onclick="openRestart()">
-            Restart
-          </button>
+          <div id="top-left">
+            <button
+              id="restart-game"
+              class="game-button"
+              onclick="openRestart()"
+            >
+              Restart
+            </button>
+          </div>
+
           <div id="game-score">Score:</div>
-          <button id="quit-game" class="game-button" onclick="openQuit()">
-            Quit
-          </button>
+
+          <div id="top-right">
+            <button id="quit-game" class="game-button" onclick="openQuit()">
+              Quit
+            </button>
+          </div>
         </div>
         <div id="main-game"></div>
         <div class="bottom-game">

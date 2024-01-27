@@ -194,6 +194,35 @@ main {
     background-color: #924534;
 
     height: 5rem;
+
+  
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#top-left{
+    width: 25%;
+}
+
+#restart-game{
+    float: left;
+}
+
+#game-score{
+    display: flex;
+    justify-content: center;
+
+    width: 50%;
+}
+
+#top-right{
+    width: 25%;
+}
+
+#quit-game {
+    float: right;
 }
 
 #main-game {
