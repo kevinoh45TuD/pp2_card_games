@@ -11,7 +11,7 @@ let canFlip = 0;
 function setHome() {
     home.innerHTML =
         `
-    <div class="home-text">
+        <div class="home-text">
           <p class="dark-text">
             Welcome to Card Games!
             <br /><br />
@@ -39,6 +39,32 @@ function setHome() {
 
           <div id="info-text" class="dark-text">
             <h3>Info</h3>
+          </div>
+        </div>
+      </div>
+      <div id="info-modal" class="modal">
+        <div class="modal-content">
+          <button id="close-modal" class="modal-button" onclick="closeInfo()">
+            <i class="fa-solid fa-x"></i>
+          </button>
+          <p>
+            The goal of Match is to clear the board by matching pairs in the
+            fewest turns possible. <br />
+            If the two selected cards are matching in number and color they will
+            be removed from the game, <br />
+            otherwise they will be flipped back over and you will select again.
+            <br />
+            <br />
+            This game is also known as 'Memory'.
+          </p>
+        </div>
+      </div>
+      <div id="quit-modal" class="modal">
+        <div class="modal-content">
+          <p>Quit Game?</p>
+          <div class="yes-no">
+            <button class="choice-button" onclick="confirmQuit()">Yes</button>
+            <button class="choice-button" onclick="denyQuit()">No</button>
           </div>
         </div>
     `;
@@ -271,15 +297,41 @@ function spawnCards() {
 
 function setGame() {
     home.innerHTML =
-        `
-    <div class="container-game">
-        <div class="top-game">Restart Score: Quit</div>
+     `
+        <div class="container-game">
+        <div class="top-game">
+          <div id="top-left">
+            <button
+              id="restart-game"
+              class="game-button"
+              onclick="openRestart()"
+            >
+              Restart
+            </button>
+          </div>
+
+          <div id="game-score">Score:</div>
+
+          <div id="top-right">
+            <button id="quit-game" class="game-button" onclick="openQuit()">
+              Quit
+            </button>
+          </div>
+        </div>
         <div id="main-game"></div>
         <div class="bottom-game">
-          <div class="bottom-one">Highscore</div>
+          <div class="bottom-one">
+            <button id="info-game" class="game-button" onclick="clickInfo()">
+              Info
+            </button>
+          </div>
           <div class="bottom-two">
-            <button id="button-game" class="hbutton" onclick="setHome()">
-              <i class="fa-solid fa-play"></i>
+            <button
+              id="highscore-game"
+              class="game-button"
+              onclick="openHighscore()"
+            >
+              Highscore
             </button>
           </div>
         </div>
