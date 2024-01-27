@@ -43,22 +43,6 @@ function setHome() {
     `;
 }
 
-
-
-function clickInfo() {
-    infoModal.style.display = "block";
-}
-
-function closeInfo() {
-    infoModal.style.display = "none";
-};
-
-window.onclick = function (clickEvent) {
-    if (clickEvent.target == infoModal) {
-        infoModal.style.display = "none";
-    }
-};
-
 function compareCards(comparisonCard) {
     if (flipOne === null) {
         flipOne = document.getElementById(comparisonCard);
@@ -307,3 +291,45 @@ function setGame() {
 function clickPlay() {
     setGame();
 }
+
+//Info
+function clickInfo() {
+    infoModal.style.display = "block";
+}
+
+function closeInfo() {
+    infoModal.style.display = "none";
+};
+
+window.onclick = function (clickEvent) {
+    if (clickEvent.target == infoModal) {
+        infoModal.style.display = "none";
+    }
+};
+
+//Close Game
+function openClose(){
+
+}
+
+function confirmClose(){
+
+}
+
+function denyClose(){
+
+}
+
+//Restart Game
+function openRestart(){
+
+}
+
+function confirmRestart(){
+
+}
+
+function denyRestart(){
+
+}
+
