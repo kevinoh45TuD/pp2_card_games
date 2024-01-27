@@ -370,6 +370,7 @@ function openQuit() {
 
 function confirmQuit() {
     setHome();
+    quitModal.style.display = "none";
 }
 
 function denyQuit() {
