@@ -100,6 +100,7 @@
           </div>
         </div>
       </div>
+      <!--Modals-->
       <div id="info-modal" class="modal">
         <div class="modal-content">
           <button id="close-modal" class="modal-button" onclick="closeInfo()">
@@ -135,6 +136,17 @@
             </button>
             <button class="choice-button" onclick="denyRestart()">No</button>
           </div>
+        </div>
+      </div>
+      <div id="ask-name" class="modal">
+        <div class="modal-content">
+          <form id="player-name" action="POST">
+            <div id="name-div">
+              <label for="name">Name:</label>
+              <input type="text" name="name" id="name" />
+            </div>
+          </form>
+          <input type="submit" />
         </div>
       </div>
     </main>
