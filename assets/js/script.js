@@ -5,6 +5,7 @@ const infoModal = document.getElementById("info-modal");
 const restartModal = document.getElementById("restart-modal");
 const quitModal = document.getElementById("quit-modal");
 const nameModal = document.getElementById("name-modal");
+const highscoreModal = document.getElementById("highscore-modal");
 
 const nameForm = document.getElementById("name-form");
 
@@ -446,3 +447,19 @@ function handleName(event) {
 }
 
 nameForm.addEventListener('submit', handleName);
+
+function openHighscore() {
+    highscoreModal.style.display = "block";
+
+    let newRow = document.createElement("tr");
+    newRow.innerHTML =
+        `
+        <tr>
+            <td>${playerName1}</td>
+            <td>${playerAttempts}</td>
+        </tr>
+    `;
+
+    let table = document.getElementById("score-table");
+    table.append(newRow);
+}
