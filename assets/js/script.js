@@ -100,8 +100,8 @@ function compareCards(comparisonCard) {
             flipTwo = null;
 
             playerAttempts++;
-            let changeScore = document.getElementById("what-score");
-            changeScore.innerHTML = "Score: " + playerAttempts;
+            let whatScore = document.getElementById("what-score");
+            whatScore.innerHTML = "Score: " + playerAttempts;
         }
         else {
 
@@ -117,8 +117,8 @@ function compareCards(comparisonCard) {
             flipTwo = null;
 
             playerAttempts++;
-            let changeScore = document.getElementById("what-score");
-            changeScore.innerHTML = "Score: " + playerAttempts;
+            let whatScore = document.getElementById("what-score");
+            whatScore.innerHTML = "Score: " + playerAttempts;
         }
 
         canFlip = 0;
@@ -287,8 +287,8 @@ function spawnCards() {
     }
 
     playerAttempts = 0;
-    let changeScore = document.getElementById("what-score");
-    changeScore.innerHTML = "Score: " + playerAttempts;
+    let whatScore = document.getElementById("what-score");
+    whatScore.innerHTML = "Score: " + playerAttempts;
 
     generateList();
 
@@ -368,6 +368,15 @@ function setGame() {
       </div>
     `;
 
+    let changeScore = document.getElementById("game-score");
+    changeScore.innerHTML =
+        `
+        <h2 id="what-player">Player: </h2>
+        <h2 id="what-score">Score: </h2>
+    `;
+
+    document.getElementById("what-player").innerHTML = "Player: " + playerName1;
+
     spawnCards();
 }
 
@@ -431,19 +440,7 @@ function handleName(event) {
     let pName = document.getElementById("player-name");
     playerName1 = pName.value;
 
-
-
-    //nameForm.submit();
-
     setGame();
-
-    changeScore.innerHTML =
-        `
-        <h2 id="what-player">Player: </h2>
-        <h2 id="what-score">Score: </h2>
-    `;
-
-    document.getElementById("what-player").innerHTML = "Player: " + playerName1;
 
     nameModal.style.display = "none";
 }
