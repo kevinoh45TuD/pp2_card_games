@@ -405,6 +405,9 @@ window.onclick = function (clickEvent) {
     else if (clickEvent.target == restartModal) {
         restartModal.style.display = "none";
     }
+    else if (clickEvent.target == highscoreModal) {
+        highscoreModal.style.display = "none";
+    }
 };
 
 //Close Game

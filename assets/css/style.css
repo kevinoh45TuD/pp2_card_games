@@ -212,6 +212,22 @@ main {
 
 /*Name Modal*/
 /*HighScore Modal*/
+#score-table {
+    width: 100%;
+
+    border: 0.1rem solid #000;
+    border-collapse: collapse;
+
+    font-size: 1.5rem;
+}
+
+#table-headings {
+    text-align: justify;
+
+    border-bottom: 0.1rem solid #000;
+}
+
+
 /*Settings Modal*/
 
 /*Game*/
