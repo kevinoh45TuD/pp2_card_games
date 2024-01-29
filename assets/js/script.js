@@ -6,6 +6,8 @@ const restartModal = document.getElementById("restart-modal");
 const quitModal = document.getElementById("quit-modal");
 const nameModal = document.getElementById("name-modal");
 
+const nameForm = document.getElementById("player-name");
+
 let playerName1;
 let playerName2;
 
@@ -439,3 +441,5 @@ function handleName(event) {
 
     document.getElementById("what-player").innerHTML = "Player: " + playerName1;
 }
+
+nameForm.addEventListener('submit', handleName);
