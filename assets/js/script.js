@@ -409,6 +409,8 @@ function setGame() {
 function clickPlay() {
 
     nameModal.style.display = "block";
+
+    console.log(previousArray.length);
 }
 
 //Info
@@ -477,22 +479,29 @@ function handleName(event) {
 nameForm.addEventListener('submit', handleName);
 
 function openHighscore() {
-    highscoreModal.style.display = "block";
 
-    let table = document.getElementById("score-table");
+    if (previousArray.length >= 1) {
+        highscoreModal.style.display = "block";
 
-    for (let i = 0; i < previousArray.length; i++) {
-        let newRow = document.createElement("tr");
+        let table = document.getElementById("score-table");
 
-        newRow.innerHTML =
-            `
+        for (let i = 0; i < previousArray.length; i++) {
+            let newRow = document.createElement("tr");
+
+            newRow.innerHTML =
+                `
             <tr>
                 <td>${previousArray[i].previousName}</td>
                 <td>${previousArray[i].previousScore}</td>
             </tr>
         `;
 
-        table.append(newRow);
+            table.append(newRow);
+        }
     }
+    else {
+        alert("You must finish a match to record a highscore!");
+    }
+
 }
 
