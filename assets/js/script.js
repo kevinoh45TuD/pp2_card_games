@@ -479,16 +479,20 @@ nameForm.addEventListener('submit', handleName);
 function openHighscore() {
     highscoreModal.style.display = "block";
 
-    let newRow = document.createElement("tr");
-    newRow.innerHTML =
-        `
-        <tr>
-            <td>${playerName1}</td>
-            <td>${playerAttempts}</td>
-        </tr>
-    `;
-
     let table = document.getElementById("score-table");
-    table.append(newRow);
+
+    for (let i = 0; i < previousArray.length; i++) {
+        let newRow = document.createElement("tr");
+
+        newRow.innerHTML =
+            `
+            <tr>
+                <td>${previousArray[i].previousName}</td>
+                <td>${previousArray[i].previousScore}</td>
+            </tr>
+        `;
+
+        table.append(newRow);
+    }
 }
 
