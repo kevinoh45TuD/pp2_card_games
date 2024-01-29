@@ -34,7 +34,7 @@ function setHome() {
             below.
             <br />
           </p>
-          <a href="game.html">Game</a>
+          
         </div>
         <div class="home-buttons">
           <button id="button-play" class="hbutton" onclick="clickPlay()">

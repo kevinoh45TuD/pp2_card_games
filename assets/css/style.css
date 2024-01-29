@@ -197,6 +197,21 @@ main {
     font-size: 2rem;
 }
 
+/*Restart Modal*/
+#p-restart{
+    display: flex;
+    
+    justify-content: center;
+    
+    padding-bottom: 2rem;
+    
+    font-size: 2rem;
+}
+
+/*Name Modal*/
+/*HighScore Modal*/
+/*Settings Modal*/
+
 /*Game*/
 .game-button {
     background-color: #35654D;
