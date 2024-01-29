@@ -170,24 +170,24 @@ main {
 }
 
 /*Quit Modal*/
-.yes-no{
+.yes-no {
     display: flex;
 
     justify-content: space-evenly;
 }
 
-.choice-button{
+.choice-button {
     background-color: darkorchid;
 
     width: 4rem;
     height: 4rem;
 
-    border-radius:50%;
+    border-radius: 50%;
 
     font-size: 1.5rem;
 }
 
-#p-quit{
+#p-quit {
     display: flex;
 
     justify-content: center;
@@ -223,30 +223,31 @@ main {
 
     height: 5rem;
 
-  
+
     display: flex;
 
     justify-content: center;
     align-items: center;
 }
 
-#top-left{
+#top-left {
     width: 25%;
 }
 
-#restart-game{
+#restart-game {
     float: left;
     left: 2rem;
 }
 
-#game-score{
+#game-score {
     display: flex;
     justify-content: center;
-
+    text-align: center;
+    flex-direction: column;
     width: 50%;
 }
 
-#top-right{
+#top-right {
     width: 25%;
 }
 
