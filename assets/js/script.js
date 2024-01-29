@@ -18,6 +18,7 @@ let flipTwo = null;
 let canFlip = 0;
 
 let playerAttempts = 0;
+let matchesMade = 0;
 
 let activeCards = [];
 
@@ -86,6 +87,21 @@ function setHome() {
     `;
 }
 
+function saveScore() {
+    let previousObject = {
+        previousName: playerName1,
+        previousScore: playerAttempts
+    };
+
+    previousArray.push(previousObject);
+}
+
+function endGame() {
+    saveScore();
+    console.log(previousArray);
+    console.log(previousArray[0].previousName);
+}
+
 function compareCards(comparisonCard) {
     if (flipOne === null) {
         flipOne = document.getElementById(comparisonCard);
@@ -106,6 +122,11 @@ function compareCards(comparisonCard) {
             playerAttempts++;
             let whatScore = document.getElementById("what-score");
             whatScore.innerHTML = "Score: " + playerAttempts;
+            matchesMade++;
+
+            if (matchesMade >= 8) {
+                endGame();
+            }
         }
         else {
 
@@ -291,6 +312,7 @@ function spawnCards() {
     }
 
     playerAttempts = 0;
+    matchesMade = 0;
     let whatScore = document.getElementById("what-score");
     whatScore.innerHTML = "Score: " + playerAttempts;
 
@@ -470,17 +492,3 @@ function openHighscore() {
     table.append(newRow);
 }
 
-function saveScore() {
-    let previousObject = {
-        previousName: playerName1,
-        previousScore: playerAttempts
-    };
-
-    previousArray.push(previousObject);
-}
-
-function endGame() {
-    saveScore();
-    console.log(previousArray);
-    console.log(previousArray[0].previousName);
-}
