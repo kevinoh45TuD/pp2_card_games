@@ -158,6 +158,22 @@
           </table>
         </div>
       </div>
+      <div id="endgame-modal" class="modal">
+        <div class="modal-content">
+          <h2>Congratulations <span id="endg-name">name</span>!</h2>
+          <p>
+            You achieved a score of<span id="endg-score">score</span><br />
+            Would you like to restart to play again, or quit to return to the
+            main menu?
+          </p>
+          <div class="yes-no">
+            <button class="choice-button" onclick="confirmRestart()">
+              Restart
+            </button>
+            <button class="choice-button" onclick="confirmQuit()">Quit</button>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!--Footer-->
