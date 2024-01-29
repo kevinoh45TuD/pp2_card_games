@@ -236,6 +236,7 @@ main {
 
 #restart-game{
     float: left;
+    left: 2rem;
 }
 
 #game-score{
@@ -251,6 +252,7 @@ main {
 
 #quit-game {
     float: right;
+    right: 2rem;
 }
 
 #main-game {
