@@ -6,6 +6,7 @@ const restartModal = document.getElementById("restart-modal");
 const quitModal = document.getElementById("quit-modal");
 const nameModal = document.getElementById("name-modal");
 const highscoreModal = document.getElementById("highscore-modal");
+const endgameModal = document.getElementById("endgame-modal");
 
 const nameForm = document.getElementById("name-form");
 
@@ -100,6 +101,10 @@ function endGame() {
     saveScore();
     console.log(previousArray);
     console.log(previousArray[0].previousName);
+
+    endgameModal.style.display = "block";
+    document.getElementById("endg-name").innerHTML = playerName1;
+    document.getElementById("endg-score").innerHTML = playerAttempts;
 }
 
 function compareCards(comparisonCard) {
@@ -442,9 +447,14 @@ function openQuit() {
     quitModal.style.display = "block";
 }
 
-function confirmQuit() {
+function confirmQuit(int) {
     setHome();
-    quitModal.style.display = "none";
+    if (int = 1) {
+        quitModal.style.display = "none";
+    }
+    else {
+        endgameModal.style.display = "none";
+    }
 }
 
 function denyQuit() {
@@ -456,9 +466,14 @@ function openRestart() {
     restartModal.style.display = "block";
 }
 
-function confirmRestart() {
+function confirmRestart(int) {
     spawnCards();
-    restartModal.style.display = "none";
+    if (int = 1) {
+        restartModal.style.display = "none";
+    }
+    else {
+        endgameModal.style.display = "none";
+    }
 }
 
 function denyRestart() {
