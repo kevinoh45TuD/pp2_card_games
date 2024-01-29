@@ -6,7 +6,7 @@ const restartModal = document.getElementById("restart-modal");
 const quitModal = document.getElementById("quit-modal");
 const nameModal = document.getElementById("name-modal");
 
-const nameForm = document.getElementById("player-name");
+const nameForm = document.getElementById("name-form");
 
 let playerName1;
 let playerName2;
@@ -428,9 +428,13 @@ function denyRestart() {
 function handleName(event) {
     event.preventDefault();
 
-    playerName1 = form.elements['name'].value;
+    let pName = document.getElementById("player-name");
+    playerName1 = pName.value;
 
-    nameModal.style.display = "none";
+
+
+    //nameForm.submit();
+
     setGame();
 
     changeScore.innerHTML =
@@ -440,6 +444,8 @@ function handleName(event) {
     `;
 
     document.getElementById("what-player").innerHTML = "Player: " + playerName1;
+
+    nameModal.style.display = "none";
 }
 
 nameForm.addEventListener('submit', handleName);
