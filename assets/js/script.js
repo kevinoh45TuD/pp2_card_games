@@ -4,6 +4,10 @@ const homeContainer = document.getElementById("home");
 const infoModal = document.getElementById("info-modal");
 const restartModal = document.getElementById("restart-modal");
 const quitModal = document.getElementById("quit-modal");
+const nameModal = document.getElementById("name-modal");
+
+let playerName1;
+let playerName2;
 
 let flipOne = null;
 let flipTwo = null;
@@ -94,7 +98,7 @@ function compareCards(comparisonCard) {
             flipTwo = null;
 
             playerAttempts++;
-            let changeScore = document.getElementById("game-score");
+            let changeScore = document.getElementById("what-score");
             changeScore.innerHTML = "Score: " + playerAttempts;
         }
         else {
@@ -111,7 +115,7 @@ function compareCards(comparisonCard) {
             flipTwo = null;
 
             playerAttempts++;
-            let changeScore = document.getElementById("game-score");
+            let changeScore = document.getElementById("what-score");
             changeScore.innerHTML = "Score: " + playerAttempts;
         }
 
@@ -281,9 +285,9 @@ function spawnCards() {
     }
 
     playerAttempts = 0;
-    let changeScore = document.getElementById("game-score");
+    let changeScore = document.getElementById("what-score");
     changeScore.innerHTML = "Score: " + playerAttempts;
-    
+
     generateList();
 
     let board = document.getElementById("main-game");
@@ -366,7 +370,8 @@ function setGame() {
 }
 
 function clickPlay() {
-    setGame();
+
+    nameModal.style.display = "block";
 }
 
 //Info
@@ -418,3 +423,19 @@ function denyRestart() {
     restartModal.style.display = "none";
 }
 
+function handleName(event) {
+    event.preventDefault();
+
+    playerName1 = form.elements['name'].value;
+
+    nameModal.style.display = "none";
+    setGame();
+
+    changeScore.innerHTML =
+        `
+        <h2 id="what-player">Player: </h2>
+        <h2 id="what-score">Score: </h2>
+    `;
+
+    document.getElementById("what-player").innerHTML = "Player: " + playerName1;
+}
