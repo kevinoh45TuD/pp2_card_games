@@ -21,6 +21,9 @@ let playerAttempts = 0;
 
 let activeCards = [];
 
+let previousArray = [];
+
+
 function setHome() {
     home.innerHTML =
         `
@@ -465,4 +468,19 @@ function openHighscore() {
 
     let table = document.getElementById("score-table");
     table.append(newRow);
+}
+
+function saveScore() {
+    let previousObject = {
+        previousName: playerName1,
+        previousScore: playerAttempts
+    };
+
+    previousArray.push(previousObject);
+}
+
+function endGame() {
+    saveScore();
+    console.log(previousArray);
+    console.log(previousArray[0].previousName);
 }
