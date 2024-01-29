@@ -449,7 +449,7 @@ function openQuit() {
 
 function confirmQuit(int) {
     setHome();
-    if (int = 1) {
+    if (int == 1) {
         quitModal.style.display = "none";
     }
     else {
@@ -468,7 +468,7 @@ function openRestart() {
 
 function confirmRestart(int) {
     spawnCards();
-    if (int = 1) {
+    if (int == 1) {
         restartModal.style.display = "none";
     }
     else {
