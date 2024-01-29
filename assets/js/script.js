@@ -1,6 +1,8 @@
 
-const infoModal = document.getElementById("info-modal");
 const homeContainer = document.getElementById("home");
+
+const infoModal = document.getElementById("info-modal");
+const restartModal = document.getElementById("restart-modal");
 const quitModal = document.getElementById("quit-modal");
 
 let flipOne = null;
@@ -9,6 +11,8 @@ let flipTwo = null;
 let canFlip = 0;
 
 let playerAttempts = 0;
+
+let activeCards = [];
 
 function setHome() {
     home.innerHTML =
@@ -272,8 +276,14 @@ function randomPick(whichArray) {
 
 function spawnCards() {
 
-    playerAttempts = 0;
+    for (let k = 0; k < activeCards.length; k++) {
+        activeCards[k].remove();
+    }
 
+    playerAttempts = 0;
+    let changeScore = document.getElementById("game-score");
+    changeScore.innerHTML = "Score: " + playerAttempts;
+    
     generateList();
 
     let board = document.getElementById("main-game");
@@ -282,6 +292,7 @@ function spawnCards() {
 
     for (let h = 0; h <= 3; h++) {
         for (let i = 0; i <= 3; i++) {
+
             let card = document.createElement("img");
             card.src = "assets/images/card-art/card-back.png";
 
@@ -298,6 +309,7 @@ function spawnCards() {
             card.style.left = calX + "rem";
 
             board.appendChild(card);
+            activeCards.push(card);
 
             count++;
         }
@@ -309,7 +321,7 @@ function spawnCards() {
 
 function setGame() {
     home.innerHTML =
-     `
+        `
         <div class="container-game">
         <div class="top-game">
           <div id="top-left">
@@ -373,6 +385,9 @@ window.onclick = function (clickEvent) {
     else if (clickEvent.target == quitModal) {
         quitModal.style.display = "none";
     }
+    else if (clickEvent.target == restartModal) {
+        restartModal.style.display = "none";
+    }
 };
 
 //Close Game
@@ -391,14 +406,15 @@ function denyQuit() {
 
 //Restart Game
 function openRestart() {
-
+    restartModal.style.display = "block";
 }
 
 function confirmRestart() {
-
+    spawnCards();
+    restartModal.style.display = "none";
 }
 
 function denyRestart() {
-
+    restartModal.style.display = "none";
 }
 
