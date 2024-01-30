@@ -451,8 +451,7 @@ function confirmQuit(int) {
     setHome();
     if (int == 1) {
         quitModal.style.display = "none";
-    }
-    else {
+    } else {
         endgameModal.style.display = "none";
     }
 }
@@ -470,8 +469,7 @@ function confirmRestart(int) {
     spawnCards();
     if (int == 1) {
         restartModal.style.display = "none";
-    }
-    else {
+    } else {
         endgameModal.style.display = "none";
     }
 }
@@ -500,16 +498,24 @@ function openHighscore() {
 
         let table = document.getElementById("score-table");
 
+        table.innerHTML =
+            `
+                <tr id="table-headings">
+                    <th id="heading-one">Name</th>
+                    <th id="heading-two">Score</th>
+                </tr>
+            `;
+
         for (let i = 0; i < previousArray.length; i++) {
             let newRow = document.createElement("tr");
 
             newRow.innerHTML =
                 `
-            <tr>
-                <td>${previousArray[i].previousName}</td>
-                <td>${previousArray[i].previousScore}</td>
-            </tr>
-        `;
+                    <tr>
+                        <td>${previousArray[i].previousName}</td>
+                        <td>${previousArray[i].previousScore}</td>
+                    </tr>
+                `;
 
             table.append(newRow);
         }
