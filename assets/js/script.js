@@ -1,31 +1,28 @@
-
+//Variable for div that will hold either home/game screen content
 const homeContainer = document.getElementById("home");
-
+//Variables for all of modal divs 
 const infoModal = document.getElementById("info-modal");
 const restartModal = document.getElementById("restart-modal");
 const quitModal = document.getElementById("quit-modal");
 const nameModal = document.getElementById("name-modal");
 const highscoreModal = document.getElementById("highscore-modal");
 const endgameModal = document.getElementById("endgame-modal");
-
+//Variable for player name form
 const nameForm = document.getElementById("name-form");
-
-let playerName1;
-let playerName2;
-
+//Variables to keep record for each match attempt 
 let flipOne = null;
 let flipTwo = null;
-
 let canFlip = 0;
-
+//Variables to keep record of game information
+let playerName1;
 let playerAttempts = 0;
 let matchesMade = 0;
-
+//Arrays relating to the cards
+let fullDeck = [];
 let activeCards = [];
-
+//An array that will hold objects containing previous successful matches information, name/score
 let previousArray = [];
-
-
+//Change content on screen to HTML for home screen
 function setHome() {
     home.innerHTML =
         `
@@ -87,7 +84,7 @@ function setHome() {
         </div>
     `;
 }
-
+//Create a new object with player's score and name. Save the object to previousArray
 function saveScore() {
     let previousObject = {
         previousName: playerName1,
@@ -96,7 +93,7 @@ function saveScore() {
 
     previousArray.push(previousObject);
 }
-
+//Called when 8 matches made. Call to save player's score/name. Open and change end screen.
 function endGame() {
     saveScore();
     console.log(previousArray);
@@ -106,7 +103,7 @@ function endGame() {
     document.getElementById("endg-name").innerHTML = playerName1;
     document.getElementById("endg-score").innerHTML = playerAttempts;
 }
-
+//Will save value of cards based on how many have been flipped. Will check if its a match based on if two have been flipped
 function compareCards(comparisonCard) {
     if (flipOne === null) {
         flipOne = document.getElementById(comparisonCard);
@@ -154,7 +151,7 @@ function compareCards(comparisonCard) {
         canFlip = 0;
     }
 }
-
+//Switch case to set cards new image based on which card it is (what the card's id is)
 function flipCard(cardValue, whichCard) {
     switch (cardValue) {
         case "2r-heart":
@@ -210,7 +207,7 @@ function flipCard(cardValue, whichCard) {
             break;
     }
 }
-
+//Once any card is clicked it will call this function, which will flip the card then compare them.
 function clickCard() {
 
     let cardId = this.id;
@@ -255,9 +252,7 @@ function clickCard() {
     }
 
 }
-
-let fullDeck = [];
-
+//Empty deck array, for each number of each suit add it to deck array.
 function generateList() {
 
     fullDeck = [];
@@ -299,7 +294,7 @@ function generateList() {
 
     console.log(fullDeck);
 }
-
+//Pick a random number within size of remaining deck. The card with this index will be removed from deck.
 function randomPick(whichArray) {
     let pick = Math.floor(Math.random() * (whichArray.length + 1));
 
@@ -309,7 +304,7 @@ function randomPick(whichArray) {
 
     return x;
 }
-
+//Remove any cards already on the screen. Spawn new ones and give them specific values
 function spawnCards() {
 
     for (let k = 0; k < activeCards.length; k++) {
@@ -355,7 +350,7 @@ function spawnCards() {
     console.log(flipOne, flipTwo);
 
 }
-
+//Change content on screen to HTML for game screen
 function setGame() {
     home.innerHTML =
         `
@@ -410,23 +405,22 @@ function setGame() {
 
     spawnCards();
 }
-
+//Open the modal for asking users name when they click play button
 function clickPlay() {
 
     nameModal.style.display = "block";
 
     console.log(previousArray.length);
 }
-
-//Info
+//Open the info modal
 function clickInfo() {
     infoModal.style.display = "block";
 }
-
+//Close info modal when user clicks 'X'
 function closeInfo() {
     infoModal.style.display = "none";
-};
-
+}
+//Window click event for additional method of closing different modals. 
 window.onclick = function (clickEvent) {
     if (clickEvent.target == infoModal) {
         infoModal.style.display = "none";
@@ -441,12 +435,11 @@ window.onclick = function (clickEvent) {
         highscoreModal.style.display = "none";
     }
 };
-
-//Close Game
+//Open modal for quiting game 
 function openQuit() {
     quitModal.style.display = "block";
 }
-
+//Call for home screen HTML and close modal that initiated quit
 function confirmQuit(int) {
     setHome();
     if (int == 1) {
@@ -455,16 +448,15 @@ function confirmQuit(int) {
         endgameModal.style.display = "none";
     }
 }
-
+//Close modal if user chooses 'no'
 function denyQuit() {
     quitModal.style.display = "none";
 }
-
-//Restart Game
+//Open modal for restarting game
 function openRestart() {
     restartModal.style.display = "block";
 }
-
+//Call for new cards and close modal that initiated restart
 function confirmRestart(int) {
     spawnCards();
     if (int == 1) {
@@ -473,11 +465,11 @@ function confirmRestart(int) {
         endgameModal.style.display = "none";
     }
 }
-
+//Close modal if user chooses 'no'
 function denyRestart() {
     restartModal.style.display = "none";
 }
-
+//Prevent default form submission and handle user inputted name. Start game.
 function handleName(event) {
     event.preventDefault();
 
@@ -488,9 +480,7 @@ function handleName(event) {
 
     nameModal.style.display = "none";
 }
-
-nameForm.addEventListener('submit', handleName);
-
+//Make highscore screen visible and create new rows for each record in previousArray
 function openHighscore() {
 
     if (previousArray.length >= 1) {
@@ -525,4 +515,5 @@ function openHighscore() {
     }
 
 }
-
+//Add event listeners to required elements
+nameForm.addEventListener('submit', handleName);
