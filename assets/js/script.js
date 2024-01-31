@@ -24,65 +24,35 @@ let activeCards = [];
 let previousArray = [];
 //Change content on screen to HTML for home screen
 function setHome() {
-    home.innerHTML =
+    homeContainer.innerHTML =
         `
-        <div class="home-text">
-          <p class="dark-text">
-            Welcome to Card Games!
-            <br /><br />
-            Here you will be able to play match, the main objective is to flip
-            cards till you find a pair.
-            <br />
-            You can either startplaying or get more information about the game
-            below.
-            <br />
-          </p>
-          
-        </div>
-        <div class="home-buttons">
-          <button id="button-play" class="hbutton" onclick="clickPlay()">
-            <i class="fa-solid fa-play"></i>
-          </button>
-
-          <div id="play-text" class="dark-text">
-            <h3>Play</h3>
-          </div>
-
-          <button id="button-info" class="hbutton" onclick="clickInfo()">
-            <i class="fa-solid fa-info"></i>
-          </button>
-
-          <div id="info-text" class="dark-text">
-            <h3>Info</h3>
-          </div>
-        </div>
-      </div>
-      <div id="info-modal" class="modal">
-        <div class="modal-content">
-          <button id="close-modal" class="modal-button" onclick="closeInfo()">
-            <i class="fa-solid fa-x"></i>
-          </button>
-          <p>
-            The goal of Match is to clear the board by matching pairs in the
-            fewest turns possible. <br />
-            If the two selected cards are matching in number and color they will
-            be removed from the game, <br />
-            otherwise they will be flipped back over and you will select again.
-            <br />
-            <br />
-            This game is also known as 'Memory'.
-          </p>
-        </div>
-      </div>
-      <div id="quit-modal" class="modal">
-        <div class="modal-content">
-          <p>Quit Game?</p>
-          <div class="yes-no">
-            <button class="choice-button" onclick="confirmQuit()">Yes</button>
-            <button class="choice-button" onclick="denyQuit()">No</button>
-          </div>
-        </div>
-    `;
+            <div class="home-text">
+                <p class="dark-text">
+                    Welcome to Card Games!
+                    <br /><br />
+                    Here you will be able to play match, the main objective is to flip
+                    cards till you find a pair.
+                    <br />
+                    You can either startplaying or get more information about the game
+                    below.
+                    <br />
+                </p>
+            </div>
+            <div class="home-buttons">
+                <button id="button-play" class="hbutton" onclick="clickPlay()">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+                <div id="play-text" class="dark-text">
+                    <h3>Play</h3>
+                </div>
+                <button id="button-info" class="hbutton" onclick="clickInfo()">
+                    <i class="fa-solid fa-info"></i>
+                </button>
+                <div id="info-text" class="dark-text">
+                    <h3>Info</h3>
+                </div>
+            </div>
+        `;
 }
 //Create a new object with player's score and name. Save the object to previousArray
 function saveScore() {
@@ -352,7 +322,7 @@ function spawnCards() {
 }
 //Change content on screen to HTML for game screen
 function setGame() {
-    home.innerHTML =
+    homeContainer.innerHTML =
         `
             <div class="container-game">
                 <div class="top-game">
