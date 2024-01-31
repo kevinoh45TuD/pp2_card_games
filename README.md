@@ -1,6 +1,6 @@
 # Card Games
 
-<!--Add opening picture-->
+![AmIResponsive Image](/assets/doc-media/doc-responsive.png)
 
 ## Intro
 
