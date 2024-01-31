@@ -443,13 +443,18 @@ function denyRestart() {
 //Prevent default form submission and handle user inputted name. Start game.
 function handleName(event) {
     event.preventDefault();
-
     let pName = document.getElementById("player-name");
-    playerName1 = pName.value;
-
-    setGame();
-
-    nameModal.style.display = "none";
+    let testVal = /^[A-Za-z]+$/;
+    if (testVal.test(pName.value) === true){
+        playerName1 = pName.value;
+        setGame();
+        nameModal.style.display = "none";
+    } else {
+        let nameIssue = document.getElementById("name-issue");
+        nameIssue.style.display = "block";
+        nameIssue.innerHTML = "Name must contain only letters and no spaces!"
+        console.log(pName.value);
+    }
 }
 //Make highscore screen visible and create new rows for each record in previousArray
 function openHighscore() {
