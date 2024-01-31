@@ -315,8 +315,8 @@ No majors issues are present on the website.
 
 The website was tested on various devices using a different browser for each device.
 
-- Desktop Computer : Opera
-- Tablet : Microsoft Edge
+- Windows Computer : Opera
+- Huawei Tablet : Microsoft Edge
 - Pixel 6 : Google Chrome
 
 | Feature being tested                                        | Expected Outcome                               | Testing Performed                | Result |
@@ -343,3 +343,26 @@ Each feature was manually tested on each device mentioned above.
 No issues were encountered when manually testing website.
 
 [Back to top](#card-games)
+
+## Deployment
+
+My website was deployed using 'Github Pages'.
+
+Steps taken to achieve this:
+
+1. Go to repository page
+2. Click 'Settings'
+3. Click 'Pages'
+4. Select 'main' branch to deploy from
+
+[Back to top](#card-games)
+
+## Credits
+
+- A special thanks to my mentor Matt Boden for his assistance throughtout the project! [MattBCoding](https://github.com/MattBCoding)
+
+### Code Institute
+
+- Code Institute template used for repository [Template](https://github.com/Code-Institute-Org/ci-full-template)
+
+- Code Institute learning modules used to learn different aspects of JavaScript [Code Institute](https://codeinstitute.net/ie/)
