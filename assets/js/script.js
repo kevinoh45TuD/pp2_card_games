@@ -50,13 +50,13 @@ function setHome() {
                 </p>
             </div>
             <div class="home-buttons">
-                <button id="button-play" class="hbutton">
+                <button id="button-play" class="hbutton" aria-label="button to play game">
                     <i class="fa-solid fa-play"></i>
                 </button>
                 <div id="play-text" class="dark-text">
                     <h3>Play</h3>
                 </div>
-                <button id="button-info" class="hbutton">
+                <button id="button-info" class="hbutton" aria-label="button to show info">
                     <i class="fa-solid fa-info"></i>
                 </button>
                 <div id="info-text" class="dark-text">
