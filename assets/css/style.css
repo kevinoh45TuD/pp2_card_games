@@ -90,7 +90,7 @@ main {
 }
 
 .hbutton {
-    border: solid 0.5rem #000;
+    border: solid 0.25rem #000;
     border-radius: 50%;
 
     color: #FFF;
@@ -125,7 +125,7 @@ main {
     justify-content: center;
 }
 
-/*Modal*/
+/*Modals*/
 .modal {
     display: none;
     position: fixed;
@@ -147,7 +147,7 @@ main {
     margin: 24% auto;
 
     padding: 2rem;
-    border: 0.5rem solid #000;
+    border: 0.25rem solid #000;
 
     width: 80%;
 }
@@ -181,11 +181,11 @@ main {
 .choice-button {
     background-color: darkorchid;
 
-    width: 4rem;
-    height: 4rem;
+    width: 7rem;
+    height: 5rem;
 
     border-radius: 50%;
-
+    border: 0.25rem solid #000;
     font-size: 1.5rem;
 }
 
@@ -226,12 +226,20 @@ main {
 
     border-bottom: 0.1rem solid #000;
 }
+/*Endgame Modal*/
+#end-title{
+    text-align: center;
+}
+#end-text{
+    text-align: center;
+    padding: 2rem;
+}
 /*Game*/
 .game-button {
     background-color: #35654D;
     color: #000;
 
-    border: #000 solid 0.5rem;
+    border: #000 solid 0.25rem;
     border-radius: 50%;
 
     width: 5rem;
