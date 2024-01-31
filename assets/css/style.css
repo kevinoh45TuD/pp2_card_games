@@ -168,7 +168,11 @@ main {
     border: solid #000;
     border-radius: 50%;
 }
-
+/*Info Modal*/
+#info-p{
+    text-align: center;
+    font-size: 1.2rem;
+}
 /*Quit Modal*/
 .yes-no {
     display: flex;
@@ -256,6 +260,10 @@ main {
     text-align: justify;
 
     border-bottom: 0.1rem solid #000;
+}
+#no-highscore-text {
+    font-size: 2rem;
+    text-align: center;
 }
 /*Endgame Modal*/
 #end-title{
