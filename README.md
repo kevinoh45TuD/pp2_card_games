@@ -252,3 +252,44 @@ Both of these future features may draw additional users to the site, which benef
 They would also provide more enjoyment, which benefits the user.
 
 [Back to top](#card-games)
+
+## Technologies Used
+
+### Languages
+
+- This website was created using HTML, CSS and JavaScript languages.
+
+- W3schools was used to reference the documentation for HTML, CSS and JavaScript [W3schools](https://www.w3schools.com)
+
+### Code
+
+- Github was used to both manage my repository and host my website using the pages functionality [Github](https://github.com)
+
+- Codeanywhere was used as a cloud-based IDE [Codeanywhere](https://app.codeanywhere.com/)
+
+### Testing
+
+- CSS validator [CSS Validator](https://jigsaw.w3.org/css-validator/)
+- HTML validator [HTML Validator](https://validator.w3.org)
+- WAVE Accessibility [WAVE](https://wave.webaim.org)
+- JSHint [JSHint](https://jshint.com)
+
+### Icons
+
+- Font Awesome was used for the icons featured on this website [Font Awesome](https://fontawesome.com)
+
+- Faviconer was used to create an ICO file for the favicon icon [Faviconer](http://faviconer.com)
+
+- FireAlpaca software was used to create the art for the favicon icons and card art [FireAlpaca](https://firealpaca.com)
+
+### Color Palette
+
+- Coolors was used to display an image of final color palette [Coolors](https://coolors.co)
+
+- EightShapes Contrast Grid was used to test contrast of color palette [EightShapes](https://contrast-grid.eightshapes.com)
+
+### Media
+
+- Website used for initial image of this README [AmIResponsive](https://ui.dev/amiresponsive)
+
+[Back to top](#card-games)
