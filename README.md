@@ -204,11 +204,39 @@ At the bottom of the game screen there are two other buttons, Info and Highscore
 
 ### Info
 
+Regardless of where the info modal is opened from (on the home/game screen) the user will be show the same information.
+
+![Picture of info modal](/assets/doc-media/pp2-docs-info.png)
+
+The user may click either the 'X' or anywhere outside the modal to close it.
+
 ### Scoreboard
+
+The scoreboard modal will show users details about previous succesful games.
+
+![Picture of scoreboard](/assets/doc-media/pp2-docs-table.png)
+
+If the user has no previous scores recorded a different modal will show to advise them this.
+
+![Picture of no scores](/assets/doc-media/pp2-docs-nohighscore.png)
 
 ### Restart / Quit
 
+At any point during a game of match the user may either restart or quit the game.
+Both modals look similar for these two actions.
+
+![Picture of quit](/assets/doc-media/pp2-docs-quit.png)
+![Picture of restart](/assets/doc-media/pp2-docs-restart.png)
+
+To close either of these modals the user must confirm an option.
+
 ### End Game
+
+Once the user successfully finishes a game of match they will be presented an end screen congratulating them and showing them their score.
+
+![Picture of endscreen](/assets/doc-media/pp2-docs-end.png)
+
+They will have the option to restart or quit the game at this point.
 
 ### Future Features
 
