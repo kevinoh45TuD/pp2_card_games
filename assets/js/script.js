@@ -75,15 +75,11 @@ function saveScore() {
         previousName: playerName1,
         previousScore: playerAttempts
     };
-
     previousArray.push(previousObject);
 }
 //Called when 8 matches made. Call to save player's score/name. Open and change end screen.
 function endGame() {
     saveScore();
-    console.log(previousArray);
-    console.log(previousArray[0].previousName);
-
     endgameModal.style.display = "block";
     document.getElementById("endg-name").innerHTML = playerName1;
     document.getElementById("endg-score").innerHTML = playerAttempts;
@@ -92,47 +88,33 @@ function endGame() {
 function compareCards(comparisonCard) {
     if (flipOne === null) {
         flipOne = document.getElementById(comparisonCard);
-        console.log(flipOne, flipTwo);
     }
     else {
         flipTwo = document.getElementById(comparisonCard);
-        console.log(flipOne, flipTwo);
         if (flipOne.id[0] === flipTwo.id[0] && flipOne.id[1] === flipTwo.id[1]) {
-            console.log("Match!");
-
             flipOne.style.zIndex = "-1";
             flipTwo.style.zIndex = "-1";
-
             flipOne = null;
             flipTwo = null;
-
             playerAttempts++;
             let whatScore = document.getElementById("what-score");
             whatScore.innerHTML = "Score: " + playerAttempts;
             matchesMade++;
-
             if (matchesMade >= 8) {
                 endGame();
             }
         }
         else {
-
-            console.log("No Match!");
-
             flipOne.src = "assets/images/card-art/card-back.png";
             flipTwo.src = "assets/images/card-art/card-back.png";
-
             flipOne.addEventListener("click", clickCard);
             flipTwo.addEventListener("click", clickCard);
-
             flipOne = null;
             flipTwo = null;
-
             playerAttempts++;
             let whatScore = document.getElementById("what-score");
             whatScore.innerHTML = "Score: " + playerAttempts;
         }
-
         canFlip = 0;
     }
 }
@@ -194,146 +176,92 @@ function flipCard(cardValue, whichCard) {
 }
 //Once any card is clicked it will call this function, which will flip the card then compare them.
 function clickCard() {
-
     let cardId = this.id;
-
     if (canFlip <= 1) {
-
-
         if (flipOne !== null) {
             if (cardId !== flipOne.id) {
-
                 canFlip++;
-
                 this.removeEventListener("click", clickCard);
-
                 flipCard(cardId, this);
-
                 setTimeout(function () {
-
                     compareCards(cardId);
-
                 }, 1500);
-
             }
-
         }
         else {
             canFlip++;
-
             this.removeEventListener("click", clickCard);
-
             flipCard(cardId, this);
-
             setTimeout(function () {
-
                 compareCards(cardId);
-
             }, 1500);
-
-
         }
-
     }
-
 }
 //Empty deck array, for each number of each suit add it to deck array.
 function generateList() {
-
     fullDeck = [];
-
     const hearts = [
         "2r-heart",
         "3r-heart",
         "4r-heart",
         "5r-heart"
     ];
-
     const diamonds = [
         "2r-diamond",
         "3r-diamond",
         "4r-diamond",
         "5r-diamond"
     ];
-
     const spades = [
         "2b-spade",
         "3b-spade",
         "4b-spade",
         "5b-spade"
     ];
-
     const clubs = [
         "2b-club",
         "3b-club",
         "4b-club",
         "5b-club"
     ];
-
     for (let i = 0; i <= 3; i++) {
         fullDeck.push(hearts[i]);
         fullDeck.push(spades[i]);
         fullDeck.push(diamonds[i]);
         fullDeck.push(clubs[i]);
     }
-
-    console.log(fullDeck);
 }
 //Pick a random number within size of remaining deck. The card with this index will be removed from deck.
 function randomPick(whichArray) {
     let pick = Math.floor(Math.random() * (whichArray.length + 1));
-
-    
-
     let x = whichArray.splice(pick - 1, 1);
-
     return x;
 }
 //Remove any cards already on the screen. Spawn new ones and give them specific values
 function spawnCards() {
-
     for (let k = 0; k < activeCards.length; k++) {
         activeCards[k].remove();
     }
-
     playerAttempts = 0;
     matchesMade = 0;
     let whatScore = document.getElementById("what-score");
     whatScore.innerHTML = "Score: " + playerAttempts;
-
     generateList();
-
     let board = document.getElementById("main-game").children;
-
     let count = 0;
-
     for (let h = 0; h <= 3; h++) {
         for (let i = 0; i <= 3; i++) {
-
             let card = document.createElement("img");
             card.src = "assets/images/card-art/card-back.png";
-
             card.id = randomPick(fullDeck);
             card.addEventListener("click", clickCard);
-
-            //card.style.position = "absolute";
             card.style.width = "4rem";
-
-            //let calY = 13 + (7 * h);
-            //let calX = 1.5 + (6 * i);
-
-            //card.style.top = calY + "rem";
-            //card.style.left = calX + "rem";
-
             board[h].appendChild(card);
             activeCards.push(card);
-
             count++;
         }
     }
-
-    console.log(flipOne, flipTwo);
-
 }
 //Change content on screen to HTML for game screen
 function setGame() {
@@ -399,10 +327,7 @@ function setGame() {
 }
 //Open the modal for asking users name when they click play button
 function clickPlay() {
-
     nameModal.style.display = "block";
-
-    console.log(previousArray.length);
 }
 //Open the info modal
 function clickInfo() {
@@ -483,17 +408,13 @@ function handleName(event) {
     } else {
         nameIssue.style.display = "block";
         nameIssue.innerHTML = "Username must contain only letters and no spaces!";
-        console.log(pName.value);
     }
 }
 //Make highscore screen visible and create new rows for each record in previousArray
 function openHighscore() {
-
     if (previousArray.length >= 1) {
         highscoreModal.style.display = "block";
-
         let table = document.getElementById("score-table");
-
         table.innerHTML =
             `
                 <tr id="table-headings">
@@ -519,7 +440,6 @@ function openHighscore() {
     else {
         noHighscoreModal.style.display = "block";
     }
-
 }
 //Add event listeners to required elements
 nameForm.addEventListener('submit', handleName);
