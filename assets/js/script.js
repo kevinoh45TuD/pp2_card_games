@@ -66,6 +66,8 @@ function setHome() {
         `;
     let playButton = document.getElementById("button-play");
     let infoButton = document.getElementById("button-info");
+    playButton.addEventListener('click', );
+    infoButton.addEventListener('click', );
 }
 //Create a new object with player's score and name. Save the object to previousArray
 function saveScore() {
@@ -383,6 +385,10 @@ function setGame() {
     let gameQuitButton = document.getElementById("quit-game");
     let gameHighscoreButton = document.getElementById("highscore-game");
     let gameInfoButton = document.getElementById("info-game");
+    gameRestartButton.addEventListener('click', );
+    gameQuitButton.addEventListener('click', );
+    gameHighscoreButton.addEventListener('click', );
+    gameInfoButton.addEventListener('click', );
     let changeScore = document.getElementById("game-score");
     changeScore.innerHTML =
         `
@@ -519,3 +525,17 @@ function openHighscore() {
 }
 //Add event listeners to required elements
 nameForm.addEventListener('submit', handleName);
+
+playButton.addEventListener('click', );
+infoButton.addEventListener('click', );
+
+closeInfoButton.addEventListener('click', );
+
+ingameQuitButton.addEventListener('click', );
+denyQuitButton.addEventListener('click', );
+
+ingameRestartButton.addEventListener('click', );
+denyRestartButton.addEventListener('click', );
+
+endgameQuitButton.addEventListener('click', );
+endgameRestartButton.addEventListener('click', );
