@@ -157,3 +157,25 @@ Along with this white lines to create a diamond pattern, this would emulate a co
 While creating all the imagery for this website I wanted keep in line with the color palette I choose, avoid contrast issues and make sure things remained readable while on smaller screen sizes.
 
 [Back to top](#card-games)
+
+## Features
+
+### Home
+
+### Header
+
+### Footer
+
+### Gane
+
+### Info
+
+### Scoreboard
+
+### Restart / Quit
+
+### End Game
+
+### Future Features
+
+[Back to top](#card-games)
