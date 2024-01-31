@@ -7,6 +7,7 @@ const quitModal = document.getElementById("quit-modal");
 const nameModal = document.getElementById("name-modal");
 const highscoreModal = document.getElementById("highscore-modal");
 const endgameModal = document.getElementById("endgame-modal");
+const noHighscoreModal = document.getElementById("no-highscore-modal");
 //Variable for player name form
 const nameForm = document.getElementById("name-form");
 //Variables to keep record for each match attempt 
@@ -405,6 +406,9 @@ window.onclick = function (clickEvent) {
     else if (clickEvent.target == highscoreModal) {
         highscoreModal.style.display = "none";
     }
+    else if (clickEvent.target == noHighscoreModal) {
+        noHighscoreModal.style.display = "none";
+    }
 };
 //Open modal for quiting game 
 function openQuit() {
@@ -493,7 +497,7 @@ function openHighscore() {
         }
     }
     else {
-        alert("You must finish a match to record a highscore!");
+        noHighscoreModal.style.display = "block";
     }
 
 }
