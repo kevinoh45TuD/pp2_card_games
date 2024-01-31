@@ -428,5 +428,8 @@ Steps taken to achieve this:
 ### Other
 
 - An article on GitHub was used to help with creating this README doc [Article](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+- W3Schools How To used in relation to setting up 'modals' used in website [Modals](https://www.w3schools.com/howto/howto_css_modals.asp)
+- MDN Web Docs used for demo showing how to get a random number [Random Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
+- W3Resource used for tutorial on how to validate string [Validate String](https://www.w3resource.com/javascript/form/all-letters-field.php)
 
 [Back to top](#card-games)

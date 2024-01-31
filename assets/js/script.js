@@ -234,6 +234,7 @@ function generateList() {
 }
 //Pick a random number within size of remaining deck. The card with this index will be removed from deck.
 function randomPick(whichArray) {
+    //Tutorial used : [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random]
     let pick = Math.floor(Math.random() * (whichArray.length + 1));
     let x = whichArray.splice(pick - 1, 1);
     return x;
@@ -394,8 +395,9 @@ function handleName(event) {
     event.preventDefault();
     let pName = document.getElementById("player-name");
     let nameIssue = document.getElementById("name-issue");
+    //Tutorial used : [https://www.w3resource.com/javascript/form/all-letters-field.php]
     let testVal = /^[A-Za-z]+$/;
-    if (testVal.test(pName.value) === true){
+    if (testVal.test(pName.value) === true) {
         if (pName.value.length >= 9) {
             nameIssue.style.display = "block";
             nameIssue.innerHTML = "Make sure your username is 8 letters or less!";
@@ -446,17 +448,17 @@ nameForm.addEventListener('submit', handleName);
 playButton.addEventListener('click', clickPlay);
 infoButton.addEventListener('click', clickInfo);
 closeInfoButton.addEventListener('click', closeInfo);
-ingameQuitButton.addEventListener('click', function() {
+ingameQuitButton.addEventListener('click', function () {
     confirmQuit(1);
 });
 denyQuitButton.addEventListener('click', denyQuit);
-ingameRestartButton.addEventListener('click', function() {
+ingameRestartButton.addEventListener('click', function () {
     confirmRestart(1);
 });
 denyRestartButton.addEventListener('click', denyRestart);
-endgameQuitButton.addEventListener('click', function() {
+endgameQuitButton.addEventListener('click', function () {
     confirmQuit(2);
 });
-endgameRestartButton.addEventListener('click', function() {
+endgameRestartButton.addEventListener('click', function () {
     confirmRestart(2);
 });
