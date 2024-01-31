@@ -9,7 +9,7 @@ The goal of this website was to create it using HTML, CSS and JS.
 Below I have outlined different design choices, features of the pages
 and what things were used to create this website.
 
-<!--Add link to live site-->
+[Link to live website](https://kevinoh45tud.github.io/pp2_card_games/)
 
 ## Table of Contents
 
@@ -19,17 +19,17 @@ and what things were used to create this website.
    - Wireframes
    - Flow-Chart
    - Color Palette
-   - Font / Icons
+   - Icons
    - Imagery
 2. Features
-   - Navigation Bar
    - Home
+   - Header
+   - Footer
    - Game
    - Info
-   - Settings
    - Scoreboard
-   - Footer
-   - Extra Pages
+   - Restart / Quit
+   - End game
    - Future Features
 3. Technologies Used
    - Languages
