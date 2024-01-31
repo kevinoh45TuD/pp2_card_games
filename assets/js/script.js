@@ -283,7 +283,7 @@ function generateList() {
 function randomPick(whichArray) {
     let pick = Math.floor(Math.random() * (whichArray.length + 1));
 
-    let pickCard = whichArray[pick];
+    
 
     let x = whichArray.splice(pick - 1, 1);
 
@@ -473,7 +473,7 @@ function handleName(event) {
     if (testVal.test(pName.value) === true){
         if (pName.value.length >= 9) {
             nameIssue.style.display = "block";
-            nameIssue.innerHTML = "Make sure your username is 8 letters or less!"
+            nameIssue.innerHTML = "Make sure your username is 8 letters or less!";
         } else {
             playerName1 = pName.value;
             setGame();
@@ -482,7 +482,7 @@ function handleName(event) {
         }
     } else {
         nameIssue.style.display = "block";
-        nameIssue.innerHTML = "Username must contain only letters and no spaces!"
+        nameIssue.innerHTML = "Username must contain only letters and no spaces!";
         console.log(pName.value);
     }
 }
