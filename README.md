@@ -241,9 +241,14 @@ They will have the option to restart or quit the game at this point.
 ### Future Features
 
 There are many more features that could potentially be added to this website in the future. The two main ones I would focus on however are as follows:
-1. Second player support: 
+
+1. Second player support:
    - I believe it would be a great feature to allow the player the option to select whether they want to play solo or with a friend.
-   This would require an additional varible and an extra input in the name form modal.
-2. 
+     This would require an additional varible and an extra input in the name form modal.
+2. Other Games:
+   - I believe adding additional games would not be too difficult. It would require additional card art. An example could be 'Blackjack' another single player game.
+  
+Both of these future features may draw additional users to the site, which benefits the site owner.
+They would also provide more enjoyment, which benefits the user.
 
 [Back to top](#card-games)
