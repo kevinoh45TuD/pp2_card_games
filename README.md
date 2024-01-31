@@ -112,3 +112,27 @@ this helped me determine which color to use for text based on its background.
 ![Picture of EightShapes contrast](/assets/doc-media/doc-contrast.png)
 
 [Link to EightShapes](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23FFFFFF%0D%0A%23920616%0D%0A%23C8AC5F%0D%0A%23275B32%0D%0A%23000000&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp)
+
+### Icons
+
+I used [FontAwesome](https://fontawesome.com) to implement icons into the website.
+
+There are six icons featured on this website:
+
+1. Play Icon, to start the game.
+2. Info Icon, to open the modal with information about the game.
+3. Close/X Icon, to close the info modal.
+4. Facebook Icon, opens facebook page on new tab.
+5. Twitter Icon, opens twitter page on new tab.
+6. Youtube Icon, opens youtube page on new tab.
+
+I felt that these icons were both fitting for this website as they maintain an infomative and simplistic style.
+While also being neccessary to emulate linking to potential social media pages.
+
+The image used for my favicon was created by myself using FireAlpaca.
+
+![Picture of favicon](/assets/images/heart-favicon.ico)
+
+I chose to create a simple icon matching the heart icon found in the header of the website.
+
+### Imagery
