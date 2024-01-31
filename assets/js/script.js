@@ -440,20 +440,25 @@ function confirmRestart(int) {
 function denyRestart() {
     restartModal.style.display = "none";
 }
-//Prevent default form submission and handle user inputted name. Start game.
+//Prevent default form submission and validate/handle user inputted name. Start game.
 function handleName(event) {
     event.preventDefault();
     let pName = document.getElementById("player-name");
     let nameIssue = document.getElementById("name-issue");
     let testVal = /^[A-Za-z]+$/;
     if (testVal.test(pName.value) === true){
-        playerName1 = pName.value;
-        setGame();
-        nameModal.style.display = "none";
-        nameIssue.style.display = "none";
+        if (pName.value.length >= 9) {
+            nameIssue.style.display = "block";
+            nameIssue.innerHTML = "Make sure your username is 8 letters or less!"
+        } else {
+            playerName1 = pName.value;
+            setGame();
+            nameModal.style.display = "none";
+            nameIssue.style.display = "none";
+        }
     } else {
         nameIssue.style.display = "block";
-        nameIssue.innerHTML = "Name must contain only letters and no spaces!"
+        nameIssue.innerHTML = "Username must contain only letters and no spaces!"
         console.log(pName.value);
     }
 }
