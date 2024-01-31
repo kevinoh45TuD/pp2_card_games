@@ -82,7 +82,7 @@
           </p>
         </div>
         <div class="home-buttons">
-          <button id="button-play" class="hbutton" onclick="clickPlay()">
+          <button id="button-play" class="hbutton">
             <i class="fa-solid fa-play"></i>
           </button>
 
@@ -90,7 +90,7 @@
             <h3>Play</h3>
           </div>
 
-          <button id="button-info" class="hbutton" onclick="clickInfo()">
+          <button id="button-info" class="hbutton">
             <i class="fa-solid fa-info"></i>
           </button>
 
@@ -102,7 +102,7 @@
       <!--Modals-->
       <div id="info-modal" class="modal">
         <div class="modal-content">
-          <button id="close-modal" class="modal-button" onclick="closeInfo()">
+          <button id="close-modal" class="modal-button">
             <i class="fa-solid fa-x"></i>
           </button>
           <p id="info-p">
@@ -121,8 +121,8 @@
         <div class="modal-content">
           <p id="p-quit">Quit Game?</p>
           <div class="yes-no">
-            <button id="ingame-quit-button" class="choice-button" onclick="confirmQuit(1)">Yes</button>
-            <button id="deny-quit-button" class="choice-button" onclick="denyQuit()">No</button>
+            <button id="ingame-quit-button" class="choice-button">Yes</button>
+            <button id="deny-quit-button" class="choice-button">No</button>
           </div>
         </div>
       </div>
@@ -130,10 +130,10 @@
         <div class="modal-content">
           <p id="p-restart">Restart Game?</p>
           <div class="yes-no">
-            <button id="ingame-restart-button" class="choice-button" onclick="confirmRestart(1)">
+            <button id="ingame-restart-button" class="choice-button">
               Yes
             </button>
-            <button id="deny-restart-button" class="choice-button" onclick="denyRestart()">No</button>
+            <button id="deny-restart-button" class="choice-button">No</button>
           </div>
         </div>
       </div>
@@ -170,10 +170,10 @@
             main menu?
           </p>
           <div class="yes-no">
-            <button id="endgame-restart-button" class="choice-button" onclick="confirmRestart(2)">
+            <button id="endgame-restart-button" class="choice-button">
               Restart
             </button>
-            <button id="endgame-quit-button" class="choice-button" onclick="confirmQuit(2)">Quit</button>
+            <button id="endgame-quit-button" class="choice-button">Quit</button>
           </div>
         </div>
       </div>
