@@ -379,10 +379,10 @@ function setGame() {
                 </div>
             </div>
         `;
-    let gameRestartButton = document.getElementById("button-play");
-    let gameQuitButton = document.getElementById("button-play");
-    let gameHighscoreButton = document.getElementById("button-play");
-    let gameInfoButton = document.getElementById("button-play");
+    let gameRestartButton = document.getElementById("restart-game");
+    let gameQuitButton = document.getElementById("quit-game");
+    let gameHighscoreButton = document.getElementById("highscore-game");
+    let gameInfoButton = document.getElementById("info-game");
     let changeScore = document.getElementById("game-score");
     changeScore.innerHTML =
         `

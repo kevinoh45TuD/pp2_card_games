@@ -121,8 +121,8 @@
         <div class="modal-content">
           <p id="p-quit">Quit Game?</p>
           <div class="yes-no">
-            <button class="choice-button" onclick="confirmQuit(1)">Yes</button>
-            <button class="choice-button" onclick="denyQuit()">No</button>
+            <button id="ingame-quit-button" class="choice-button" onclick="confirmQuit(1)">Yes</button>
+            <button id="deny-quit-button" class="choice-button" onclick="denyQuit()">No</button>
           </div>
         </div>
       </div>
@@ -130,10 +130,10 @@
         <div class="modal-content">
           <p id="p-restart">Restart Game?</p>
           <div class="yes-no">
-            <button class="choice-button" onclick="confirmRestart(1)">
+            <button id="ingame-restart-button" class="choice-button" onclick="confirmRestart(1)">
               Yes
             </button>
-            <button class="choice-button" onclick="denyRestart()">No</button>
+            <button id="deny-restart-button" class="choice-button" onclick="denyRestart()">No</button>
           </div>
         </div>
       </div>
@@ -170,10 +170,10 @@
             main menu?
           </p>
           <div class="yes-no">
-            <button class="choice-button" onclick="confirmRestart(2)">
+            <button id="endgame-restart-button" class="choice-button" onclick="confirmRestart(2)">
               Restart
             </button>
-            <button class="choice-button" onclick="confirmQuit(2)">Quit</button>
+            <button id="endgame-quit-button" class="choice-button" onclick="confirmQuit(2)">Quit</button>
           </div>
         </div>
       </div>
