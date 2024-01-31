@@ -261,10 +261,12 @@ main {
 /*Endgame Modal*/
 #end-title{
     text-align: center;
+    font-size: 2rem;
 }
 #end-text{
     text-align: center;
     padding: 2rem;
+    font-size: 1.5rem;
 }
 /*Game*/
 .game-button {
