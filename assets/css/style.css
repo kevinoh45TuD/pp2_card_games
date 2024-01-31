@@ -274,9 +274,9 @@ main {
     border: #000 solid 0.25rem;
     border-radius: 50%;
 
-    width: 5rem;
-    height: 3rem;
-
+    width: 6rem;
+    height: 4rem;
+    font-size: 1.1rem;
     position: relative;
 }
 .container-game {
