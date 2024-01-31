@@ -226,10 +226,6 @@ main {
 
     border-bottom: 0.1rem solid #000;
 }
-
-
-/*Settings Modal*/
-
 /*Game*/
 .game-button {
     background-color: #35654D;
@@ -243,14 +239,12 @@ main {
 
     position: relative;
 }
-
 .container-game {
     display: flex;
     flex-direction: column;
 
     width: 100%;
 }
-
 .top-game {
     background-color: #924534;
 
@@ -291,8 +285,14 @@ main {
 
 #main-game {
     background-color: #395C94;
-
     height: 36rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.gamerow{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .bottom-game {
