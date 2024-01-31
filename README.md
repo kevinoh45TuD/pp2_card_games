@@ -303,13 +303,62 @@ No majors issues are present on the website.
 
 #### W3C CSS
 
+Screenshot of CSS validator results:
+
+![Picture of CSS validator results](/assets/doc-media/doc-validator-css.png)
+
+[Link to CSS validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkevinoh45tud.github.io%2Fpp2_card_games%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+No errors were present when testing the CSS validator.
+
 #### HTML Validator
+
+Screenshot of HTML validator results:
+
+![Picture of HTML validator results](/assets/doc-media/doc-validator-html.png)
+
+[Link to HTML validator results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkevinoh45tud.github.io%2Fpp2_card_games%2F)
+
+No issues were present with the HTML validation.
+
+Additional screenshot for when HTML changes:
+
+![Picture of second HTML results](/assets/doc-media/doc-validator-html2.png)
+
+I also tested the game screens HTML by viewing 'page source' and pasting the HTML into the validators 'text input' option.
 
 #### JSHint
 
+Screenshot of JSHint results:
+
+![Picture of JSHint result](/assets/doc-media/doc-validator-js.png)
+
+No issues/errors were present when testing the JS code.
+The configure setting was set to 'Assume: New JavaScript extensions', as it presented warnings in relation to 'let' and 'const'.
+
 #### Lighthouse
 
+The lighthouse tests were done using Opera developer tools.
+
+Screenshot of Lighthouse results for desktop:
+
+![Lighthouse for desktop](/assets/doc-media/doc-lighthouse-desktop.png)
+
+Screenshot of Lighthouse results for mobile:
+
+![Lighthouse for mobile](/assets/doc-media/doc-lighthouse-mobile.png)
+
+Both lighthouse tests returned very high results.
+
 ### Wave webaim - Accessibility testing
+
+Screenshot of Wave Webaim results: 
+
+![Wave results screenshot](/assets/doc-media/doc-wave-accessibility.png)
+
+[Link to Wave results](https://wave.webaim.org/report#/https://kevinoh45tud.github.io/pp2_card_games/)
+
+No issues/errors were present when testing on Wave.
 
 ### Manual Testing
 
