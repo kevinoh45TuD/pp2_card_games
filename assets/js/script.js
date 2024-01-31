@@ -318,7 +318,7 @@ function spawnCards() {
 
     generateList();
 
-    let board = document.getElementById("main-game");
+    let board = document.getElementById("main-game").children;
 
     let count = 0;
 
@@ -331,16 +331,16 @@ function spawnCards() {
             card.id = randomPick(fullDeck);
             card.addEventListener("click", clickCard);
 
-            card.style.position = "absolute";
+            //card.style.position = "absolute";
             card.style.width = "4rem";
 
-            let calY = 13 + (7 * h);
-            let calX = 1.5 + (6 * i);
+            //let calY = 13 + (7 * h);
+            //let calX = 1.5 + (6 * i);
 
-            card.style.top = calY + "rem";
-            card.style.left = calX + "rem";
+            //card.style.top = calY + "rem";
+            //card.style.left = calX + "rem";
 
-            board.appendChild(card);
+            board[h].appendChild(card);
             activeCards.push(card);
 
             count++;
