@@ -92,6 +92,15 @@ The colors of the final website are generally quite similar to that of the wiref
 The info page concept was removed, instead the information being shortened and put into a modal.
 The final website focused more on features and modals.
 
+### Flow Chart
+
+I created a flow chart to show the general idea of how the user will navigate the website.
+I used a website called 'Visual Paradigm'.
+
+![Screenshot of flowchart](/assets/doc-media/doc-flowchart.png)
+
+[Link to Visual Paradigm](https://online.visual-paradigm.com/diagrams/features/flowchart-tool/)
+
 ### Color Palette
 
 My color palette features 5 main colors: White, Red, Gold, Green,and Black.
@@ -352,7 +361,7 @@ Both lighthouse tests returned very high results.
 
 ### Wave webaim - Accessibility testing
 
-Screenshot of Wave Webaim results: 
+Screenshot of Wave Webaim results:
 
 ![Wave results screenshot](/assets/doc-media/doc-wave-accessibility.png)
 
