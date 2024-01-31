@@ -81,9 +81,9 @@ I created my wireframes using [Balsamiq](https://balsamiq.com)
 
 My initial concept was multiple pages and more focus on other card games.
 
-- [Home page wireframe](/doc-media/wireframe-index.png)
-- [Game page wireframe](/doc-media/wireframe-game.png)
-- [Info page wireframe](/doc-media/wireframe-info.png)
+- ![Home page wireframe](/assets/doc-media/wireframe-index.png)
+- [Game page wireframe](/assets/doc-media/wireframe-game.png)
+- [Info page wireframe](/assets/doc-media/wireframe-info.png)
 
 From wireframe stage to final website the general layout of both the home and game page stayed the same.
 The colors of the final website are generally quite similar to that of the wireframe.
