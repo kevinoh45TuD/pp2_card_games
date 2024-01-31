@@ -1,6 +1,6 @@
 //Variable for div that will hold either home/game screen content
 const homeContainer = document.getElementById("home");
-//Variables for all of modal divs 
+//Reference for all of modal divs 
 const infoModal = document.getElementById("info-modal");
 const restartModal = document.getElementById("restart-modal");
 const quitModal = document.getElementById("quit-modal");
@@ -8,6 +8,16 @@ const nameModal = document.getElementById("name-modal");
 const highscoreModal = document.getElementById("highscore-modal");
 const endgameModal = document.getElementById("endgame-modal");
 const noHighscoreModal = document.getElementById("no-highscore-modal");
+//Reference to buttons
+let playButton = document.getElementById("button-play");
+let infoButton = document.getElementById("button-info");
+const closeInfoButton = document.getElementById("close-modal");
+const ingameQuitButton = document.getElementById("ingame-quit-button");
+const denyQuitButton = document.getElementById("deny-quit-button");
+const ingameRestartButton = document.getElementById("ingame-restart-button");
+const denyRestartButton = document.getElementById("deny-restart-button");
+const endgameQuitButton = document.getElementById("endgame-quit-button");
+const endgameRestartButton = document.getElementById("endgame-restart-button");
 //Variable for player name form
 const nameForm = document.getElementById("name-form");
 //Variables to keep record for each match attempt 
@@ -54,6 +64,8 @@ function setHome() {
                 </div>
             </div>
         `;
+    let playButton = document.getElementById("button-play");
+    let infoButton = document.getElementById("button-info");
 }
 //Create a new object with player's score and name. Save the object to previousArray
 function saveScore() {
@@ -367,6 +379,10 @@ function setGame() {
                 </div>
             </div>
         `;
+    let gameRestartButton = document.getElementById("button-play");
+    let gameQuitButton = document.getElementById("button-play");
+    let gameHighscoreButton = document.getElementById("button-play");
+    let gameInfoButton = document.getElementById("button-play");
     let changeScore = document.getElementById("game-score");
     changeScore.innerHTML =
         `
