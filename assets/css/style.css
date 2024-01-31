@@ -304,7 +304,7 @@ main {
 
 #restart-game {
     float: left;
-    left: 2rem;
+    left: 1rem;
 }
 
 #game-score {
@@ -313,7 +313,8 @@ main {
     text-align: center;
     flex-direction: column;
     width: 50%;
-    color: #FFF
+    color: #FFF;
+    font-size: 0.8rem;
 }
 
 #top-right {
@@ -322,7 +323,7 @@ main {
 
 #quit-game {
     float: right;
-    right: 2rem;
+    right: 1rem;
 }
 
 #main-game {
@@ -358,11 +359,11 @@ main {
 }
 
 #info-game {
-    left: 2rem;
+    left: 1rem;
 }
 
 #highscore-game {
-    right: 2rem;
+    right: 1rem;
 }
 
 /*Footer*/
