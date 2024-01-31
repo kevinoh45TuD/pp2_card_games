@@ -444,13 +444,14 @@ function denyRestart() {
 function handleName(event) {
     event.preventDefault();
     let pName = document.getElementById("player-name");
+    let nameIssue = document.getElementById("name-issue");
     let testVal = /^[A-Za-z]+$/;
     if (testVal.test(pName.value) === true){
         playerName1 = pName.value;
         setGame();
         nameModal.style.display = "none";
+        nameIssue.style.display = "none";
     } else {
-        let nameIssue = document.getElementById("name-issue");
         nameIssue.style.display = "block";
         nameIssue.innerHTML = "Name must contain only letters and no spaces!"
         console.log(pName.value);
