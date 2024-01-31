@@ -76,3 +76,19 @@ Like with the above section here I have outlined some requirements the site owne
 - Store and display values relating to user's previous matches.
 
 ### Wireframes
+
+I created my wireframes using [Balsamiq](https://balsamiq.com)
+
+My initial concept was multiple pages and more focus on other card games.
+
+- [Home page wireframe](/doc-media/wireframe-index.png)
+- [Game page wireframe](/doc-media/wireframe-game.png)
+- [Info page wireframe](/doc-media/wireframe-info.png)
+
+From wireframe stage to final website the general layout of both the home and game page stayed the same.
+The colors of the final website are generally quite similar to that of the wireframe.
+
+The info page concept was removed, instead the information being shortened and put into a modal.
+The final website focused more on features and modals.
+
+### Color Palette
