@@ -247,7 +247,7 @@ There are many more features that could potentially be added to this website in 
      This would require an additional varible and an extra input in the name form modal.
 2. Other Games:
    - I believe adding additional games would not be too difficult. It would require additional card art. An example could be 'Blackjack' another single player game.
-  
+
 Both of these future features may draw additional users to the site, which benefits the site owner.
 They would also provide more enjoyment, which benefits the user.
 
@@ -291,5 +291,39 @@ They would also provide more enjoyment, which benefits the user.
 ### Media
 
 - Website used for initial image of this README [AmIResponsive](https://ui.dev/amiresponsive)
+
+[Back to top](#card-games)
+
+## Testing
+
+Below I have provided both screenshots and links to various testing for this website. In addition manual testing results are provided at the end.
+No majors issues are present on the website.
+
+### Validator
+
+#### W3C CSS
+
+#### HTML Validator
+
+#### JSHint
+
+#### Lighthouse
+
+### Wave webaim - Accessibility testing
+
+### Manual Testing
+
+The website was tested on various devices using a different browser for each device.
+
+- Desktop Computer : Opera
+- Tablet : Microsoft Edge
+- Pixel 6 : Google Chrome
+
+| Feature being tested        | Expected Outcome          | Testing Performed | Result (Pass or fail) |
+| --------------------------- | ------------------------- | ----------------- | --------------------- |
+|             |       |  | Pass                  |
+
+
+No issues were encountered when manually testing website.
 
 [Back to top](#card-games)
