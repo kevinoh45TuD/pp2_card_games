@@ -319,10 +319,26 @@ The website was tested on various devices using a different browser for each dev
 - Tablet : Microsoft Edge
 - Pixel 6 : Google Chrome
 
-| Feature being tested        | Expected Outcome          | Testing Performed | Result (Pass or fail) |
-| --------------------------- | ------------------------- | ----------------- | --------------------- |
-|             |       |  | Pass                  |
+| Feature being tested                                        | Expected Outcome                               | Testing Performed                | Result |
+| ----------------------------------------------------------- | ---------------------------------------------- | -------------------------------- | ------ |
+| Home Screen: Pressing Info Button                           | Open Info Modal                                | Press info button                | Pass   |
+| Home Screen: Pressing Any Social Media Icon                 | Open respective website in new tab             | Press each icon on footer        | Pass   |
+| Home Screen: Pressing On Play Button                        | Open name modal                                | Press play button                | Pass   |
+| Name Modal: Enter Invalid Name                              | Show text explaining issue                     | Enter invalid name, press button | Pass   |
+| Name Modal: Press Submit With Valid Name                    | Close modal, start game                        | Enter valid name, press button   | Pass   |
+| Game Screen: Press Any Card                                 | Flip card clicked                              | Flip a card                      | Pass   |
+| Game Screen: Press Any Second Card                          | Flip second card, compare cards                | Flip a second card               | Pass   |
+| Game Screen: No Match                                       | Flip both cards over                           | Don't match                      | Pass   |
+| Game Screen: Match                                          | Hide cards from game                           | Match Two Cards                  | Pass   |
+| Game Screen: Press Any Option (Restart,Quit,Info,Highscore) | Open respective modal                          | Press each button on game screen | Pass   |
+| Game Screen: Win Game                                       | Open end game modal                            | Win Game                         | Pass   |
+| Restart Modal: Confirm                                      | Clear current game card/score, spawn new cards | Press confirm on restart modal   | Pass   |
+| Quit Modal: Confirm                                         | Set main content to home screen html           | Press confirm on quit modal      | Pass   |
+| Quit/Restart Modal: Deny                                    | Close respective modal                         | Press deny for both restart/quit | Pass   |
+| Info Modal: Press 'X'                                       | Close info modal                               | Press 'X' on info modal          | Pass   |
+| Any Modal: Press Anywhere Other Than Modal                  | Close respective modal                         | Do action with each modal open   | Pass   |
 
+Each feature was manually tested on each device mentioned above.
 
 No issues were encountered when manually testing website.
 
