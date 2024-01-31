@@ -81,7 +81,8 @@ I created my wireframes using [Balsamiq](https://balsamiq.com)
 
 My initial concept was multiple pages and more focus on other card games.
 
-- ![Home page wireframe](/assets/doc-media/wireframe-index.png)
+![Home page wireframe](/assets/doc-media/wireframe-index.png)
+
 - [Game page wireframe](/assets/doc-media/wireframe-game.png)
 - [Info page wireframe](/assets/doc-media/wireframe-info.png)
 
@@ -92,3 +93,19 @@ The info page concept was removed, instead the information being shortened and p
 The final website focused more on features and modals.
 
 ### Color Palette
+
+My color palette features 5 main colors: White, Red, Gold, Green,and Black.
+
+![Picture of color palette](/assets/doc-media/)
+I used the website called Coolors to create the above image showing the color palette with its hex values.
+[Coolors](https://coolors.co/ffffff-920616-c8ac5f-275b32-000000)
+
+I sourced my color palette from a website called 'SchemeColor'.
+[SchemeColor](https://www.schemecolor.com/fine-jewellery.php)
+
+Once I was happy with this color palette I used the website EightShapes to check the contrast between colors,
+this helped me determine which color to use for text based on its background.
+
+![Picture of EightShapes contrast](/assets/doc-media/)
+
+[Link to EightShapes](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23FFFFFF%0D%0A%23920616%0D%0A%23C8AC5F%0D%0A%23275B32%0D%0A%23000000&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp)
