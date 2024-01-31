@@ -211,6 +211,32 @@ main {
 }
 
 /*Name Modal*/
+#name-form{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    justify-content: center;
+}
+#name-div{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+#name-label{
+    padding-right: 1rem;
+}
+#player-name{
+    height: 1.75rem;
+    border: solid 0.05rem #000;
+}
+#name-submit{
+    margin: auto;
+    width: 6rem;
+    height: 3rem;
+    border: 0.15rem solid #000;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
 /*HighScore Modal*/
 #score-table {
     width: 100%;
