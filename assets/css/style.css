@@ -237,6 +237,12 @@ main {
     border-radius: 50%;
     font-size: 1.5rem;
 }
+#name-issue{
+    color: darkred;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    display: none;
+}
 /*HighScore Modal*/
 #score-table {
     width: 100%;
