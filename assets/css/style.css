@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 /*General*/
 body {
     min-height: 100vh;
@@ -12,9 +13,11 @@ body {
     /*Generic Styles*/
     color: #000;
 }
+
 .white-text {
     color: #FFF;
 }
+
 /*Header*/
 header {
     background-color: #275B32;
@@ -23,21 +26,26 @@ header {
     padding: 1rem;
     flex-direction: column;
 }
+
 .suit-icons {
     display: flex;
     list-style: none;
     justify-content: center;
 }
+
 .header-icon {
     width: 1.5rem;
 }
+
 .li-icon {
     padding: 0rem 1rem;
 }
+
 #page-title {
     display: flex;
     justify-content: center;
 }
+
 /*Main*/
 main {
     background-color: #C8AC5F;
@@ -47,14 +55,17 @@ main {
     align-items: center;
     justify-content: center;
 }
+
 .container-home {
     width: 100%;
 }
+
 .home-text {
     text-align: center;
     font-size: 1.25rem;
     margin-bottom: 4rem;
 }
+
 .hbutton {
     border: solid 0.25rem #000;
     border-radius: 50%;
@@ -67,21 +78,26 @@ main {
     display: block;
     margin: auto;
 }
+
 #button-play {
     background: #275B32;
 }
+
 #play-text {
     display: flex;
     justify-content: center;
     margin-bottom: 3rem;
 }
+
 #button-info {
     background: #920616;
 }
+
 #info-text {
     display: flex;
     justify-content: center;
 }
+
 /*Modals*/
 .modal {
     display: none;
@@ -94,6 +110,7 @@ main {
     background-color: #000;
     background-color: rgba(0, 0, 0, 0.4);
 }
+
 .modal-content {
     background-color: #C8AC5F;
     margin: 17% auto;
@@ -101,6 +118,7 @@ main {
     border: 0.25rem solid #000;
     width: 80%;
 }
+
 .modal-button {
     color: #FFF;
     background-color: #275B32;
@@ -115,16 +133,19 @@ main {
     border: solid #000;
     border-radius: 50%;
 }
+
 /*Info Modal*/
-#info-p{
+#info-p {
     text-align: center;
     font-size: 1.2rem;
 }
+
 /*Quit Modal*/
 .yes-no {
     display: flex;
     justify-content: space-evenly;
 }
+
 .choice-button {
     background-color: #275B32;
     color: #FFF;
@@ -134,12 +155,14 @@ main {
     border: 0.25rem solid #000;
     font-size: 1.5rem;
 }
+
 #p-quit {
     display: flex;
     justify-content: center;
     padding-bottom: 2rem;
     font-size: 2rem;
 }
+
 /*Restart Modal*/
 #p-restart {
     display: flex;
@@ -147,26 +170,31 @@ main {
     padding-bottom: 2rem;
     font-size: 2rem;
 }
+
 /*Name Modal*/
-#name-form{
+#name-form {
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
     justify-content: center;
 }
-#name-div{
+
+#name-div {
     display: flex;
     justify-content: center;
     padding-bottom: 2rem;
 }
-#name-label{
+
+#name-label {
     padding-right: 1rem;
 }
-#player-name{
+
+#player-name {
     height: 1.75rem;
     border: solid 0.05rem #000;
 }
-#name-submit{
+
+#name-submit {
     margin: auto;
     width: 6rem;
     height: 3rem;
@@ -176,12 +204,14 @@ main {
     background-color: #275B32;
     color: #FFF;
 }
-#name-issue{
+
+#name-issue {
     color: #920616;
     text-align: center;
     padding-bottom: 0.5rem;
     display: none;
 }
+
 /*HighScore Modal*/
 #score-table {
     width: 100%;
@@ -189,24 +219,29 @@ main {
     border-collapse: collapse;
     font-size: 1.5rem;
 }
+
 #table-headings {
     text-align: justify;
     border-bottom: 0.1rem solid #000;
 }
+
 #no-highscore-text {
     font-size: 2rem;
     text-align: center;
 }
+
 /*Endgame Modal*/
-#end-title{
+#end-title {
     text-align: center;
     font-size: 2rem;
 }
-#end-text{
+
+#end-text {
     text-align: center;
     padding: 2rem;
     font-size: 1.5rem;
 }
+
 /*Game*/
 .game-button {
     background-color: #275B32;
@@ -218,11 +253,13 @@ main {
     font-size: 1.1rem;
     position: relative;
 }
+
 .container-game {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
+
 .top-game {
     background-color: #920616;
     height: 5rem;
@@ -230,13 +267,16 @@ main {
     justify-content: center;
     align-items: center;
 }
+
 #top-left {
     width: 25%;
 }
+
 #restart-game {
     float: left;
     left: 1rem;
 }
+
 #game-score {
     display: flex;
     justify-content: center;
@@ -246,13 +286,16 @@ main {
     color: #FFF;
     font-size: 0.8rem;
 }
+
 #top-right {
     width: 25%;
 }
+
 #quit-game {
     float: right;
     right: 1rem;
 }
+
 #main-game {
     background-color: #C8AC5F;
     height: 36rem;
@@ -260,20 +303,24 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
 }
-.gamerow{
+
+.gamerow {
     display: flex;
     justify-content: space-evenly;
 }
+
 .bottom-game {
     height: 5rem;
     display: flex;
 }
+
 .bottom-one {
     background-color: #920616;
     width: 50%;
     display: flex;
     align-items: center;
 }
+
 .bottom-two {
     background-color: #920616;
     width: 50%;
@@ -281,16 +328,20 @@ main {
     align-items: center;
     justify-content: right;
 }
+
 #info-game {
     left: 1rem;
 }
+
 #highscore-game {
     right: 1rem;
 }
+
 /*Footer*/
 footer {
     background-color: #275B32;
 }
+
 #social-networks {
     text-align: center;
     padding: 1rem 0;
@@ -298,6 +349,7 @@ footer {
     justify-content: space-evenly;
     list-style-type: none;
 }
+
 #social-networks i {
     font-size: 2rem;
     padding: 5%;
