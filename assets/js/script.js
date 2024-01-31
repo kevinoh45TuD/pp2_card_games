@@ -66,8 +66,8 @@ function setHome() {
         `;
     let playButton = document.getElementById("button-play");
     let infoButton = document.getElementById("button-info");
-    playButton.addEventListener('click', );
-    infoButton.addEventListener('click', );
+    playButton.addEventListener('click', clickPlay);
+    infoButton.addEventListener('click', clickInfo);
 }
 //Create a new object with player's score and name. Save the object to previousArray
 function saveScore() {
@@ -385,10 +385,10 @@ function setGame() {
     let gameQuitButton = document.getElementById("quit-game");
     let gameHighscoreButton = document.getElementById("highscore-game");
     let gameInfoButton = document.getElementById("info-game");
-    gameRestartButton.addEventListener('click', );
-    gameQuitButton.addEventListener('click', );
-    gameHighscoreButton.addEventListener('click', );
-    gameInfoButton.addEventListener('click', );
+    gameRestartButton.addEventListener('click', openRestart);
+    gameQuitButton.addEventListener('click', openQuit);
+    gameHighscoreButton.addEventListener('click', openHighscore);
+    gameInfoButton.addEventListener('click', clickInfo);
     let changeScore = document.getElementById("game-score");
     changeScore.innerHTML =
         `
@@ -525,17 +525,20 @@ function openHighscore() {
 }
 //Add event listeners to required elements
 nameForm.addEventListener('submit', handleName);
-
-playButton.addEventListener('click', );
-infoButton.addEventListener('click', );
-
-closeInfoButton.addEventListener('click', );
-
-ingameQuitButton.addEventListener('click', );
-denyQuitButton.addEventListener('click', );
-
-ingameRestartButton.addEventListener('click', );
-denyRestartButton.addEventListener('click', );
-
-endgameQuitButton.addEventListener('click', );
-endgameRestartButton.addEventListener('click', );
+playButton.addEventListener('click', clickPlay);
+infoButton.addEventListener('click', clickInfo);
+closeInfoButton.addEventListener('click', closeInfo);
+ingameQuitButton.addEventListener('click', function() {
+    confirmQuit(1);
+});
+denyQuitButton.addEventListener('click', denyQuit);
+ingameRestartButton.addEventListener('click', function() {
+    confirmRestart(1);
+});
+denyRestartButton.addEventListener('click', denyRestart);
+endgameQuitButton.addEventListener('click', function() {
+    confirmQuit(2);
+});
+endgameRestartButton.addEventListener('click', function() {
+    confirmRestart(2);
+});
