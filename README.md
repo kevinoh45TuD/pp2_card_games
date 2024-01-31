@@ -164,11 +164,11 @@ While creating all the imagery for this website I wanted keep in line with the c
 
 The home screen is where the user will first arrive. It features text welcoming the user and two buttons: play and info.
 
-![Picture of home screen]()
+![Picture of home screen](/assets/doc-media/pp2-docs-home.png)
 
 Clicking the play button will ask the user for their name before starting the game.
 
-![Picture of name modal]()
+![Picture of name modal](/assets/doc-media/pp2-docs-name.png)
 
 Clicking the info button will show the user more information about 'match'.
 
@@ -178,13 +178,13 @@ Both of the buttons use the green/red shades from the color palette, while the b
 
 The header of the page features both the title and icons of the page.
 
-![Picture of header]()
+![Picture of header](/assets/doc-media/pp2-docs-header.png)
 
 ### Footer
 
 The footer features 3 icons, each representing a link to a different social media.
 
-![Picture of footer]()
+![Picture of footer](/assets/doc-media/pp2-docs-footer.png)
 
 ### Game
 
@@ -192,15 +192,15 @@ The game screen features a 4 x 4 grid of images representing the cards.
 When users click cards they will change image, based on what card value they are set to.
 When a match is made the matched cards will be hidden by setting their z-index.
 
-![Picture of game screen]()
+![Picture of game screen](/assets/doc-media/pp2-docs-game.png)
 
 The top of the game screen features two buttons, Restart and Quit. Also featured is the players name and score.
 
-![Picture of top of game sceen]()
+![Picture of top of game sceen](/assets/doc-media/pp2-docs-above.png)
 
 At the bottom of the game screen there are two other buttons, Info and Highscore
 
-![Picture of bottom of game screen]()
+![Picture of bottom of game screen](/assets/doc-media/pp2-docs-below.png)
 
 ### Info
 
