@@ -50,13 +50,13 @@ function setHome() {
                 </p>
             </div>
             <div class="home-buttons">
-                <button id="button-play" class="hbutton" onclick="clickPlay()">
+                <button id="button-play" class="hbutton">
                     <i class="fa-solid fa-play"></i>
                 </button>
                 <div id="play-text" class="dark-text">
                     <h3>Play</h3>
                 </div>
-                <button id="button-info" class="hbutton" onclick="clickInfo()">
+                <button id="button-info" class="hbutton">
                     <i class="fa-solid fa-info"></i>
                 </button>
                 <div id="info-text" class="dark-text">
@@ -345,14 +345,13 @@ function setGame() {
                         <button
                         id="restart-game"
                         class="game-button"
-                        onclick="openRestart()"
                         >
                             Restart
                         </button>
                     </div>
                 <div id="game-score">Score: 0</div>
                 <div id="top-right">
-                    <button id="quit-game" class="game-button" onclick="openQuit()">
+                    <button id="quit-game" class="game-button">
                         Quit
                     </button>
                 </div>
@@ -365,7 +364,7 @@ function setGame() {
                 </div>
                 <div class="bottom-game">
                     <div class="bottom-one">
-                        <button id="info-game" class="game-button" onclick="clickInfo()">
+                        <button id="info-game" class="game-button">
                             Info
                         </button>
                     </div>
@@ -373,7 +372,6 @@ function setGame() {
                         <button
                         id="highscore-game"
                         class="game-button"
-                        onclick="openHighscore()"
                         >
                             Highscore
                         </button>
