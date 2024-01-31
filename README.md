@@ -366,3 +366,9 @@ Steps taken to achieve this:
 - Code Institute template used for repository [Template](https://github.com/Code-Institute-Org/ci-full-template)
 
 - Code Institute learning modules used to learn different aspects of JavaScript [Code Institute](https://codeinstitute.net/ie/)
+
+### Other
+
+- An article on GitHub was used to help with creating this README doc [Article](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+[Back to top](#card-games)
