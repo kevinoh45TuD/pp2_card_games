@@ -136,3 +136,24 @@ The image used for my favicon was created by myself using FireAlpaca.
 I chose to create a simple icon matching the heart icon found in the header of the website.
 
 ### Imagery
+
+All the imagery found on my website that isn't FontAwesome was created by myself using FireAlpaca.
+
+I chose to create icons that matched what I added in my wireframe for the header icons.
+The red for the header icons is the 'Carmine' shade found in the main color palette.
+
+![Picture of header icons](/assets/doc-media/pp2-docs-header.png)
+
+The face of the cards feature either red or black coloring with a grey background.
+I styled the art in a way so that the number and suit would remain large and clear for easier readability on smaller screen sizes.
+
+![Picture of Card](/assets/images/card-art/spade3.png)
+
+When creating the back of the cards I choose to give it the red 'Carmine' shade like with the icons.
+Along with this white lines to create a diamond pattern, this would emulate a common card back found on actual cards.
+
+![Picture of Card Back](/assets/images/card-art/card-back.png)
+
+While creating all the imagery for this website I wanted keep in line with the color palette I choose, avoid contrast issues and make sure things remained readable while on smaller screen sizes.
+
+[Back to top](#card-games)
