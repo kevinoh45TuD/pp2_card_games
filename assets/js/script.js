@@ -354,55 +354,56 @@ function spawnCards() {
 function setGame() {
     home.innerHTML =
         `
-        <div class="container-game">
-        <div class="top-game">
-          <div id="top-left">
-            <button
-              id="restart-game"
-              class="game-button"
-              onclick="openRestart()"
-            >
-              Restart
-            </button>
-          </div>
-
-          <div id="game-score">Score: 0</div>
-
-          <div id="top-right">
-            <button id="quit-game" class="game-button" onclick="openQuit()">
-              Quit
-            </button>
-          </div>
-        </div>
-        <div id="main-game"></div>
-        <div class="bottom-game">
-          <div class="bottom-one">
-            <button id="info-game" class="game-button" onclick="clickInfo()">
-              Info
-            </button>
-          </div>
-          <div class="bottom-two">
-            <button
-              id="highscore-game"
-              class="game-button"
-              onclick="openHighscore()"
-            >
-              Highscore
-            </button>
-          </div>
-        </div>
-      </div>
-    `;
-
+            <div class="container-game">
+                <div class="top-game">
+                    <div id="top-left">
+                        <button
+                        id="restart-game"
+                        class="game-button"
+                        onclick="openRestart()"
+                        >
+                            Restart
+                        </button>
+                    </div>
+                <div id="game-score">Score: 0</div>
+                <div id="top-right">
+                    <button id="quit-game" class="game-button" onclick="openQuit()">
+                        Quit
+                    </button>
+                </div>
+                </div>
+                <div id="main-game">
+                    <div id="gamerow-one"></div>
+                    <div id="gamerow-two"></div>
+                    <div id="gamerow-three"></div>
+                    <div id="gamerow-four"></div>
+                </div>
+                <div class="bottom-game">
+                    <div class="bottom-one">
+                        <button id="info-game" class="game-button" onclick="clickInfo()">
+                            Info
+                        </button>
+                    </div>
+                    <div class="bottom-two">
+                        <button
+                        id="highscore-game"
+                        class="game-button"
+                        onclick="openHighscore()"
+                        >
+                            Highscore
+                        </button>
+                    </div>
+                </div>
+            </div>
+        `;
     let changeScore = document.getElementById("game-score");
     changeScore.innerHTML =
         `
-        <h2 id="what-player">Player: </h2>
-        <h2 id="what-score">Score: </h2>
-    `;
+            <h2 id="what-player">Player: </h2>
+            <h2 id="what-score">Score: </h2>
+        `;
 
     document.getElementById("what-player").innerHTML = "Player: " + playerName1;
-
     spawnCards();
 }
 //Open the modal for asking users name when they click play button
