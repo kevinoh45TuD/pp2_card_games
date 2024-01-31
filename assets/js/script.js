@@ -33,7 +33,7 @@ function setHome() {
                     Here you will be able to play match, the main objective is to flip
                     cards till you find a pair.
                     <br />
-                    You can either startplaying or get more information about the game
+                    You can either start playing or get more information about the game
                     below.
                     <br />
                 </p>
