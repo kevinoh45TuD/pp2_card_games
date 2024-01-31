@@ -85,8 +85,8 @@ function compareCards(comparisonCard) {
         if (flipOne.id[0] === flipTwo.id[0] && flipOne.id[1] === flipTwo.id[1]) {
             console.log("Match!");
 
-            flipOne.remove();
-            flipTwo.remove();
+            flipOne.style.zIndex = "-1";
+            flipTwo.style.zIndex = "-1";
 
             flipOne = null;
             flipTwo = null;
