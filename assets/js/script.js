@@ -343,10 +343,10 @@ function setGame() {
                 </div>
                 </div>
                 <div id="main-game">
-                    <div id="gamerow-one"></div>
-                    <div id="gamerow-two"></div>
-                    <div id="gamerow-three"></div>
-                    <div id="gamerow-four"></div>
+                    <div id="gamerow-one" class="gamerow"></div>
+                    <div id="gamerow-two" class="gamerow"></div>
+                    <div id="gamerow-three" class="gamerow"></div>
+                    <div id="gamerow-four" class="gamerow"></div>
                 </div>
                 <div class="bottom-game">
                     <div class="bottom-one">
