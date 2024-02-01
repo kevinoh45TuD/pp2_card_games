@@ -82,7 +82,11 @@
           </p>
         </div>
         <div class="home-buttons">
-          <button id="button-play" class="hbutton" aria-label="button to play game">
+          <button
+            id="button-play"
+            class="hbutton"
+            aria-label="button to play game"
+          >
             <i class="fa-solid fa-play"></i>
           </button>
 
@@ -90,7 +94,11 @@
             <h3>Play</h3>
           </div>
 
-          <button id="button-info" class="hbutton" aria-label="button to show info">
+          <button
+            id="button-info"
+            class="hbutton"
+            aria-label="button to show info"
+          >
             <i class="fa-solid fa-info"></i>
           </button>
 
@@ -102,7 +110,11 @@
       <!--Modals-->
       <div id="info-modal" class="modal">
         <div class="modal-content">
-          <button id="close-modal" class="modal-button" aria-label="close info modal">
+          <button
+            id="close-modal"
+            class="modal-button"
+            aria-label="close info modal"
+          >
             <i class="fa-solid fa-x"></i>
           </button>
           <p id="info-p">
@@ -144,9 +156,7 @@
               <label for="player-name" id="name-label">Name:</label>
               <input type="text" name="player-name" id="player-name" required />
             </div>
-            <p id="name-issue">
-                Name must...
-            </p>
+            <p id="name-issue">Name must...</p>
             <button type="submit" id="name-submit">Submit</button>
           </form>
         </div>
@@ -163,11 +173,12 @@
       </div>
       <div id="endgame-modal" class="modal">
         <div class="modal-content">
-          <h2 id="end-title">Congratulations <span id="endg-name">name</span>!</h2>
+          <h2 id="end-title">
+            Congratulations <span id="endg-name">name</span>!
+          </h2>
           <p id="end-text">
             You achieved a score of <span id="endg-score">score</span><br />
-            Would you like to play again, or quit to the
-            main menu?
+            Would you like to play again, or quit to the main menu?
           </p>
           <div class="yes-no">
             <button id="endgame-restart-button" class="choice-button">
@@ -177,11 +188,11 @@
           </div>
         </div>
       </div>
-      <div id=no-highscore-modal class="modal">
+      <div id="no-highscore-modal" class="modal">
         <div class="modal-content">
-            <p id="no-highscore-text">
-                You must finish a game to record a highscore!
-            </p>
+          <p id="no-highscore-text">
+            You must finish a game to record a highscore!
+          </p>
         </div>
       </div>
     </main>
