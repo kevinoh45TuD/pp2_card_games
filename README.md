@@ -4,7 +4,7 @@
 
 ## Intro
 
-The purpose of this project is to create a website where the user can play the card game 'match'.
+The purpose of this project was to create a website where the user can play the card game 'match'.
 The goal of this website was to create it using HTML, CSS and JS.
 Below I have outlined different design choices, features of the pages
 and what things were used to create this website.
@@ -17,7 +17,7 @@ and what things were used to create this website.
    - User Stories
    - Site Owner Goals
    - Wireframes
-   - Flow-Chart
+   - Flow Chart
    - Color Palette
    - Icons
    - Imagery
@@ -35,7 +35,8 @@ and what things were used to create this website.
    - Languages
    - Code
    - Testing
-   - Font / Icons
+   - Icons
+   - Color Palette
    - Media
 4. Testing
    - Validator
@@ -45,7 +46,6 @@ and what things were used to create this website.
 5. Deployment
 6. Credits
    - Code Institute
-   - Media
    - Other
 
 ## UX
@@ -59,7 +59,7 @@ Here I have outlined some user stories of things the user might want from this w
 - As a user, I want to restart the game midway.
 - As a user, I want to quit the game midway.
 - As a user, I want to start a new game when I win.
-- As a user, I wantto quit to the home screen when I win.
+- As a user, I want to quit to the home screen when I win.
 - As a user, I want to see my score as I'm playing.
 - As a user, I want to see previous scores.
 
@@ -229,7 +229,7 @@ This will keep them engaged more with the game as they can open and close any of
 
 ### Info
 
-Regardless of where the info modal is opened from (on the home/game screen) the user will be show the same information.
+Regardless of where the info modal is opened from (on the home/game screen) the user will be shown the same information.
 
 ![Picture of info modal](/assets/doc-media/pp2-docs-info.png)
 
@@ -258,7 +258,7 @@ Both modals look similar for these two actions.
 ![Picture of quit](/assets/doc-media/pp2-docs-quit.png)
 ![Picture of restart](/assets/doc-media/pp2-docs-restart.png)
 
-To close either of these modals the user must confirm an option.
+To close either of these modals the user must confirm an option, or click anywhere outside the modal.
 
 Both options allow the player to stop the current game they are playing, this gives them the freedom to navigate the website as they choose.
 
@@ -373,7 +373,7 @@ Screenshot of JSHint results:
 No issues/errors were present when testing the JS code.
 The configure setting was set to 'Assume: New JavaScript extensions', as it presented warnings in relation to 'let' and 'const'.
 
-#### Lighthouse
+### Lighthouse
 
 The lighthouse tests were done using Opera developer tools.
 
