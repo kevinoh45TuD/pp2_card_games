@@ -179,9 +179,13 @@ Clicking the play button will ask the user for their name before starting the ga
 
 ![Picture of name modal](/assets/doc-media/pp2-docs-name.png)
 
+I wanted to ask the user's name prior to starting the game as this would allow for matching scores to users but it would also allow for a more personalised touch later on with the end game screen.
+
 Clicking the info button will show the user more information about 'match'.
 
 Both of the buttons use the green/red shades from the color palette, while the background is gold.
+I wanted to make sure the initial page loaded was not too over-bearing for users, while also providing crucial options to 'play' or get 'info'.
+This benefits the site owner as it may keep the user on the website longer.
 
 ### Header
 
@@ -189,11 +193,20 @@ The header of the page features both the title and icons of the page.
 
 ![Picture of header](/assets/doc-media/pp2-docs-header.png)
 
+I decided to keep this section of the page as simplistic as possible to give the most focus to the pages title and icons.
+
+This may benefit the site owner as the users may be more likely to remember the sites name.
+
 ### Footer
 
 The footer features 3 icons, each representing a link to a different social media.
 
 ![Picture of footer](/assets/doc-media/pp2-docs-footer.png)
+
+Once clicked on the footer icons will open a new tab for the respective site.
+
+This benefits the user as they will not lose progress in their game.
+This also benefits the site owner as they won't have users leaving their site permanetly once they click a footer icon.
 
 ### Game
 
@@ -211,6 +224,9 @@ At the bottom of the game screen there are two other buttons, Info and Highscore
 
 ![Picture of bottom of game screen](/assets/doc-media/pp2-docs-below.png)
 
+I wanted to provide the user with as much features/options as possible while in the game, while not taking them to a different area from the game.
+This will keep them engaged more with the game as they can open and close any of the modals when they choose.
+
 ### Info
 
 Regardless of where the info modal is opened from (on the home/game screen) the user will be show the same information.
@@ -218,6 +234,9 @@ Regardless of where the info modal is opened from (on the home/game screen) the 
 ![Picture of info modal](/assets/doc-media/pp2-docs-info.png)
 
 The user may click either the 'X' or anywhere outside the modal to close it.
+
+The info feature is quite important to users who have never experienced the game of match before.
+This feature benefits the site owner as new users will not leave if they have no knowledge of the game.
 
 ### Scoreboard
 
@@ -229,6 +248,8 @@ If the user has no previous scores recorded a different modal will show to advis
 
 ![Picture of no scores](/assets/doc-media/pp2-docs-nohighscore.png)
 
+The purpose of this feature was to give players a reason for playing the game multiple times, they may try get a better score than before.
+
 ### Restart / Quit
 
 At any point during a game of match the user may either restart or quit the game.
@@ -239,6 +260,8 @@ Both modals look similar for these two actions.
 
 To close either of these modals the user must confirm an option.
 
+Both options allow the player to stop the current game they are playing, this gives them the freedom to navigate the website as they choose.
+
 ### End Game
 
 Once the user successfully finishes a game of match they will be presented an end screen congratulating them and showing them their score.
@@ -246,6 +269,9 @@ Once the user successfully finishes a game of match they will be presented an en
 ![Picture of endscreen](/assets/doc-media/pp2-docs-end.png)
 
 They will have the option to restart or quit the game at this point.
+
+I wanted to give the player a positive message when the completed a game.
+I also wanted to provide instant access to either a new game or the main screen.
 
 ### Future Features
 
@@ -282,6 +308,7 @@ They would also provide more enjoyment, which benefits the user.
 - HTML validator [HTML Validator](https://validator.w3.org)
 - WAVE Accessibility [WAVE](https://wave.webaim.org)
 - JSHint [JSHint](https://jshint.com)
+- Lighthouse testing was done on Opera Browser dev-tools
 
 ### Icons
 
@@ -300,6 +327,7 @@ They would also provide more enjoyment, which benefits the user.
 ### Media
 
 - Website used for initial image of this README [AmIResponsive](https://ui.dev/amiresponsive)
+- Website used for flowchart creation [Visual Paradigm](https://online.visual-paradigm.com/diagrams/features/flowchart-tool/)
 
 [Back to top](#card-games)
 
@@ -334,7 +362,7 @@ Additional screenshot for when HTML changes:
 
 ![Picture of second HTML results](/assets/doc-media/doc-validator-html2.png)
 
-I also tested the game screens HTML by viewing 'page source' and pasting the HTML into the validators 'text input' option.
+I also tested the game screens HTML as the innerHTML of the home container changes onces the game is loaded. I did this by viewing 'page source' and pasting the HTML into the validators 'text input' option.
 
 #### JSHint
 
